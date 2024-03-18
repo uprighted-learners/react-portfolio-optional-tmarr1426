@@ -14,6 +14,10 @@ const Home = () => {
           involved in some fun projects.
         </p>
       </div>
+      <footer>
+        <p>Contact Me</p>
+        <p>CopyWrite</p>
+      </footer>
     </div>
   );
 };

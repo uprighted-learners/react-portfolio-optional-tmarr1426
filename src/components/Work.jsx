@@ -34,6 +34,18 @@ const Work = () => {
           <li>Microsoft Powerpoint, Excel, Word</li>
           <li>Computer Technologies and Hardware</li>
         </ul>
+        <h4>Soft Skills</h4>
+        <ul>
+          <li>Leadership</li>
+          <li>Organization</li>
+          <li>Management</li>
+          <li>Team Building</li>
+          <li>Communication</li>
+        </ul>
+      </div>
+      <div>
+        <p>If you would like a copy of my Resume, please click the download link below.</p>
+        <a href="/assets/Resume/Resume.pdf" download>Download</a>
       </div>
       <div>
         <h3>Past History</h3>

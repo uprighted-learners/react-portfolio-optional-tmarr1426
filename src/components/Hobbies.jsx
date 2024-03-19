@@ -5,7 +5,13 @@ import ImageFour from "../assets/Miniatures/DSC_0531_result.jpg";
 
 const Hobbies = () => {
   return (
-    <div>
+    <div
+      style={{
+        display: "flex",
+        flexDirection: "column",
+        justifyContent: "center",
+      }}
+    >
       <div>
         <h2>Hobbies</h2>
       </div>
@@ -17,7 +23,7 @@ const Hobbies = () => {
           with kids and its better than I could have imagined.
         </p>
         <p>Personally, I have a few things that I love to do everyday:</p>
-        <ul>
+        <ul style={{ textAlign: "left" }}>
           <li>
             <h4>Paint Miniatures</h4>
           </li>

@@ -4,10 +4,10 @@ import { Link, useLocation } from "react-router-dom";
 const Nav = () => {
   let location = useLocation();
   console.log(location);
-  let backgroundColor = "rebeccapurple";
+  let backgroundColor = "darkgreen";
 
   return (
-    <div style={{ display: "flex", gap: "1em" }}>
+    <div style={{ display: "flex", gap: "1em", justifyContent: "center" }}>
       <Link to="/home">
         <button
           style={{

@@ -1,53 +1,96 @@
+import { useState } from "react";
+
 const Work = () => {
+  const [open, setOpen] = useState(false);
+
+  const collapsible = () => {};
+
   return (
-    <div>
+    <div
+      style={{
+        display: "flex",
+        flexDirection: "column",
+        padding: "2em",
+        width: "70em",
+      }}
+    >
       <div>
-        <h2>Work History</h2>
-        <h3>Current Career</h3>
-        <h4>UEI Group Services -- Marketing Web Developer</h4>
-        <h5>December 2023 - present</h5>
-        <p>
-          As a Marketing Web Developer for UEI Group Services I collaborate with
-          a team of marketing designers to help create, and maintain wesbites
-          for the 5 main companies that fall under the UEI Group Services
-          Umbrella. My main task is to handle website updates such as product
-          updates, or page updates, as well as maintain and fix any errors or
-          issues that arise for the websites. I handle frontend and backend
-          updates and fixes.
-        </p>
+        <div style={{ display: "flex", flexDirection: "row" }}>
+          <div style={{ marginRight: "5em" }}>
+            <div>
+              <h2>Work History</h2>
+              <h2>Current Career</h2>
+              <h4>UEI Group Services -- Marketing Web Developer</h4>
+              <h5>December 2023 - present</h5>
+              <p>
+                As a Marketing Web Developer for UEI Group Services I
+                collaborate with a team of marketing designers to help create,
+                and maintain wesbites for the 5 main companies that fall under
+                the UEI Group Services Umbrella. My main task is to handle
+                website updates such as product updates, or page updates, as
+                well as maintain and fix any errors or issues that arise for the
+                websites. I handle frontend and backend updates and fixes.
+              </p>
+            </div>
+            <div>
+              <h2>Career Goals</h2>
+              <p>
+                My current goal is to get into some form of App development. My
+                work with Websites and Marketing has pushed me into wanting to
+                develop Apps that help people in this field. Whether it be for
+                easier analytics tracking, or just more clarity, I think it
+                would be fun to make an App that helps people in this field.
+              </p>
+              <p>
+                I also have a passion for video games and board games and would
+                love to get into the field of game development. I would love to
+                find a career either creating a game I love, or help make an app
+                or website for a boardgame that assists playing the boardgame.
+              </p>
+            </div>
+            <div>
+              <p>
+                If you would like a copy of my Resume, please click the download
+                link below.
+              </p>
+              <a href="/assets/Resume/Resume.pdf" download>
+                Download
+              </a>
+            </div>
+          </div>
+          <div
+            style={{
+              textAlign: "left",
+              backgroundColor: "bisque",
+              color: "darkslategrey",
+              borderRadius: "15px",
+            }}
+          >
+            <h2>Personal Skills and experience</h2>
+            <h4>Technical Skills</h4>
+            <ul>
+              <li>React</li>
+              <li>JavaScript</li>
+              <li>HTML</li>
+              <li>CSS</li>
+              <li>MongoDB</li>
+              <li>Domain Hosting/Transferring</li>
+              <li>Microsoft Powerpoint, Excel, Word</li>
+              <li>Computer Technologies and Hardware</li>
+            </ul>
+            <h4>Soft Skills</h4>
+            <ul>
+              <li>Leadership</li>
+              <li>Organization</li>
+              <li>Management</li>
+              <li>Team Building</li>
+              <li>Communication</li>
+            </ul>
+          </div>
         </div>
-      <div>
-        <h2>Career Goals</h2>
-        <p>My current goal is to get into some form of App development. My work with Websites and Marketing has pushed me into wanting to develop Apps that help people in this field. Whether it be for easier analytics tracking, or just more clarity, I think it would be fun to make an App that helps people in this field.</p>
-        <p>I also have a passion for video games and board games and would love to get into the field of game development. I would love to find a career either creating a game I love, or help make an app or website for a boardgame that assists playing the boardgame.</p>
       </div>
-      <div>
-        <h2>Personal Skills and experience</h2>
-        <h4>Technical Skills</h4>
-        <ul>
-          <li>React</li>
-          <li>JavaScript</li>
-          <li>HTML</li>
-          <li>CSS</li>
-          <li>MongoDB</li>
-          <li>Domain Hosting/Transferring</li>
-          <li>Microsoft Powerpoint, Excel, Word</li>
-          <li>Computer Technologies and Hardware</li>
-        </ul>
-        <h4>Soft Skills</h4>
-        <ul>
-          <li>Leadership</li>
-          <li>Organization</li>
-          <li>Management</li>
-          <li>Team Building</li>
-          <li>Communication</li>
-        </ul>
-      </div>
-      <div>
-        <p>If you would like a copy of my Resume, please click the download link below.</p>
-        <a href="/assets/Resume/Resume.pdf" download>Download</a>
-      </div>
-      <div>
+
+      <div style={{ width: "70em" }}>
         <h3>Past History</h3>
         <h4>C&S Mailing -- Web DeveloperProject Manager</h4>
         <h5>July 2021 - December 2023</h5>

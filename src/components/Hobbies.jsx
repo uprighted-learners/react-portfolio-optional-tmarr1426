@@ -15,41 +15,57 @@ const Hobbies = () => {
       <div>
         <h2>Hobbies</h2>
       </div>
-      <div>
-        <p>
+      <div style={{ display: "flex", flexDirection: "row" }}>
+        <p style={{ width: "40em", padding: "2em" }}>
           I am very passionate about a lot of things in life. My family will
           always be my first love. I just love spending time with them and
           sharing the things that I enjoy with them. Every day is a new journey
           with kids and its better than I could have imagined.
         </p>
-        <p>Personally, I have a few things that I love to do everyday:</p>
-        <ul style={{ textAlign: "left" }}>
-          <li>
-            <h4>Paint Miniatures</h4>
-          </li>
-          <li>
-            <h4>Play Tabletop Games</h4>
-          </li>
-          <ul>
-            My favorites right now:
-            <li>Dungeons and Dragons</li>
-            <li>Pathfinder</li>
-            <li>Warhammer: Age of Sigmar</li>
-            <li>Magic the Gathering</li>
-          </ul>
-          <li>
-            <h4>Video Games</h4>
-          </li>
-          <ul>
-            My favorites right now:
-            <li>Baldurs Gate 3</li>
-            <li>World of Warcraft</li>
-            <li>League of Legends</li>
-          </ul>
-          <li>
-            <h4>Play Disc Golf</h4>
-          </li>
-        </ul>
+        <div>
+          <p>Personally, I have a few things that I love to do everyday:</p>
+          <div>
+            <ul style={{ display: "flex", textAlign: "left" }}>
+              <li>
+                <h4>Paint Miniatures</h4>
+              </li>
+              <ul
+                style={{
+                  display: "flex",
+                  flexDirection: "column",
+                  textAlign: "left",
+                }}
+              >
+                <li>
+                  <h4>Play Tabletop Games</h4>
+                </li>
+                My favorites right now:
+                <li>Dungeons and Dragons</li>
+                <li>Pathfinder</li>
+                <li>Warhammer: Age of Sigmar</li>
+                <li>Magic the Gathering</li>
+              </ul>
+              <ul
+                style={{
+                  display: "flex",
+                  flexDirection: "column",
+                  textAlign: "left",
+                }}
+              >
+                <li>
+                  <h4>Video Games</h4>
+                </li>
+                My favorites right now:
+                <li>Baldurs Gate 3</li>
+                <li>World of Warcraft</li>
+                <li>League of Legends</li>
+              </ul>
+              <li>
+                <h4>Play Disc Golf</h4>
+              </li>
+            </ul>
+          </div>
+        </div>
       </div>
       <div>
         <p>
@@ -58,6 +74,13 @@ const Hobbies = () => {
           out my <a href="https://www.instagram.com/tmarrminis/">instagram!</a>{" "}
           I've even started doing painting competitions which have been a blast!
         </p>
+      </div>
+      <div
+        style={{
+          display: "flex",
+          flexDirection: "row",
+        }}
+      >
         <img
           src={ImageOne}
           style={{ height: "15em", width: "20em", padding: ".5em" }}

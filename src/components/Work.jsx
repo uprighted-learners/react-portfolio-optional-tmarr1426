@@ -64,6 +64,7 @@ const Work = () => {
               backgroundColor: "bisque",
               color: "darkslategrey",
               borderRadius: "15px",
+              padding: "10px",
             }}
           >
             <h2>Personal Skills and experience</h2>
@@ -89,16 +90,22 @@ const Work = () => {
           </div>
         </div>
       </div>
+      <Box maw={400} mx="auto">
+        <Group mb={5}>
+          <Button onClick={toggle}>Past History</Button>
+        </Group>
 
-      <div style={{ width: "70em" }}>
-        <h3>Past History</h3>
-        <Box maw={400} mx="auto">
-          <Group justify="center" mb={5}>
-            <Button onClick={toggle}>C&S Mailing</Button>
-          </Group>
-
-          <Collapse in={opened}>
-            <Text>
+        <Collapse in={opened}>
+          <Text
+            style={{
+              display: "flex",
+              flexDirection: "flex-start",
+              justifyContent: "center",
+              width: "70em",
+            }}
+          >
+            <div>
+              <h3>Past History</h3>
               <h4>C&S Mailing -- Web DeveloperProject Manager</h4>
               <h5>July 2021 - December 2023</h5>
               <p>
@@ -121,16 +128,6 @@ const Work = () => {
                 being fulfilled quickly. I also helped create inventory
                 management for the products we have in our warehouse.
               </p>
-            </Text>
-          </Collapse>
-        </Box>
-        <Box maw={400} mx="auto">
-          <Group justify="center" mb={5}>
-            <Button onClick={toggle}>City of Overland Park</Button>
-          </Group>
-
-          <Collapse in={opened}>
-            <Text>
               <h4>City of Overland Park -- Police Dispatcher</h4>
               <h5>July 2016 - July 2021</h5>
               <p>
@@ -139,19 +136,6 @@ const Work = () => {
                 patrol officers, detectives, and other varying law enforcement
                 officials.
               </p>
-            </Text>
-          </Collapse>
-        </Box>
-
-        <Box maw={400} mx="auto">
-          <Group justify="center" mb={5}>
-            <Button onClick={toggle}>
-              Children's Treehouse Learning Center
-            </Button>
-          </Group>
-
-          <Collapse in={opened}>
-            <Text>
               <h4>Children's Treehouse Learning Center - Assistant Teacher</h4>
               <h5>January 2016 - July 2016</h5>
               <p>
@@ -159,17 +143,6 @@ const Work = () => {
                 Also promoted to lead teacher for the Art enrichment program for
                 kids aged 1 to 5 years.
               </p>
-            </Text>
-          </Collapse>
-        </Box>
-
-        <Box maw={400} mx="auto">
-          <Group justify="center" mb={5}>
-            <Button onClick={toggle}>Derby Dining Center</Button>
-          </Group>
-
-          <Collapse in={opened}>
-            <Text>
               <h4>Derby Dining Center - Supervisor</h4>
               <h5>August 2011 - December 2015</h5>
               <p>
@@ -177,17 +150,7 @@ const Work = () => {
                 and clean up through each major serving time at dining center on
                 campus.
               </p>
-            </Text>
-          </Collapse>
-        </Box>
 
-        <Box maw={400} mx="auto">
-          <Group justify="center" mb={5}>
-            <Button onClick={toggle}>Wheatstate Pizza</Button>
-          </Group>
-
-          <Collapse in={opened}>
-            <Text>
               <h4>Wheatstate Pizza - Manager</h4>
               <h5>July 2014 - December 2015</h5>
               <p>
@@ -199,10 +162,10 @@ const Work = () => {
                 creating deposits for the banks, as well as cleaning and
                 preparing for the next day.
               </p>
-            </Text>
-          </Collapse>
-        </Box>
-      </div>
+            </div>
+          </Text>
+        </Collapse>
+      </Box>
     </div>
   );
 };

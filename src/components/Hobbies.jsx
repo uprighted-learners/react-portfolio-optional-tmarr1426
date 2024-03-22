@@ -15,17 +15,23 @@ const Hobbies = () => {
       <div>
         <h2>Hobbies</h2>
       </div>
-      <div style={{ display: "flex", flexDirection: "row" }}>
+      <div style={{ display: "flex", flexDirection: "column" }}>
         <p style={{ width: "40em", padding: "2em" }}>
           I am very passionate about a lot of things in life. My family will
           always be my first love. I just love spending time with them and
           sharing the things that I enjoy with them. Every day is a new journey
           with kids and its better than I could have imagined.
         </p>
-        <div>
+        <div
+          style={{
+            display: "flex",
+            flexDirection: "column",
+            justifyContent: "center",
+          }}
+        >
           <p>Personally, I have a few things that I love to do everyday:</p>
           <div>
-            <ul style={{ display: "flex", textAlign: "left" }}>
+            <ul style={{ display: "flex" }}>
               <li>
                 <h4>Paint Miniatures</h4>
               </li>
@@ -37,7 +43,7 @@ const Hobbies = () => {
                 }}
               >
                 <li>
-                  <h4>Play Tabletop Games</h4>
+                  <h4>Tabletop RPG Games/Board Games</h4>
                 </li>
                 My favorites right now:
                 <li>Dungeons and Dragons</li>
@@ -61,7 +67,7 @@ const Hobbies = () => {
                 <li>League of Legends</li>
               </ul>
               <li>
-                <h4>Play Disc Golf</h4>
+                <h4>Disc Golf</h4>
               </li>
             </ul>
           </div>

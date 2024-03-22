@@ -91,7 +91,7 @@ const Work = () => {
         </div>
       </div>
       <Box maw={400} mx="auto">
-        <Group mb={5}>
+        <Group justify="center" mb={5}>
           <Button onClick={toggle}>Past History</Button>
         </Group>
 
@@ -101,7 +101,6 @@ const Work = () => {
               display: "flex",
               flexDirection: "flex-start",
               justifyContent: "center",
-              width: "70em",
             }}
           >
             <div>

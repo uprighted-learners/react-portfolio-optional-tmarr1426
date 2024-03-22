@@ -12,6 +12,9 @@
     "preview": "vite preview"
   },
   "dependencies": {
+    "@mantine/core": "^7.6.2",
+    "@mantine/form": "^7.6.2",
+    "@mantine/hooks": "^7.6.2",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
     "react-router-dev": "^1.0.0",
@@ -21,6 +24,9 @@
     "@types/react": "^18.0.24",
     "@types/react-dom": "^18.0.8",
     "@vitejs/plugin-react": "^2.2.0",
+    "postcss": "^8.4.38",
+    "postcss-preset-mantine": "^1.13.0",
+    "postcss-simple-vars": "^7.0.1",
     "vite": "^3.2.3"
   }
 }

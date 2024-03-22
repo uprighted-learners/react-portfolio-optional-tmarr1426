@@ -67,8 +67,8 @@ const Hobbies = () => {
           </div>
         </div>
       </div>
-      <div>
-        <p>
+      <div style={{ marginTop: "5em" }}>
+        <p style={{ width: "40em" }}>
           Painting Miniatures has become such an enjoyment for me that I post
           pictures of them online for others to see. If you're interested, check
           out my <a href="https://www.instagram.com/tmarrminis/">instagram!</a>{" "}

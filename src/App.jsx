@@ -1,5 +1,5 @@
 import { Routes, Route, Navigate } from "react-router-dom";
-import { Nav, Home, About, Projects, Work, Hobbies } from "./components";
+import { Nav, Home, About, Projects, Work, Hobbies } from "./components/";
 
 import "./App.css";
 
@@ -19,6 +19,9 @@ function App() {
           <Route path="/hobbies" element={<Hobbies />} />
         </Routes>
       </header>
+      <footer>
+        <Nav />
+      </footer>
     </div>
   );
 }

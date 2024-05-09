@@ -1,5 +1,13 @@
 import { Routes, Route, Navigate } from "react-router-dom";
-import { Nav, Home, About, Projects, Work, Hobbies } from "./components/";
+import {
+  Nav,
+  Home,
+  About,
+  Projects,
+  Work,
+  Hobbies,
+  Footer,
+} from "./components/";
 import { useState, useEffect } from "react";
 import "@mantine/core/styles.css";
 
@@ -43,7 +51,7 @@ function App() {
           </Routes>
         </header>
         <footer>
-          <Nav />
+          <Footer />
         </footer>
       </div>
     </MantineProvider>

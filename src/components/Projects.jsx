@@ -1,4 +1,3 @@
-import { useState, useEffect } from "react";
 import { Box, Card, CardContent, Typography, CardMedia } from "@mui/material";
 
 const Projects = ({ repos }) => {

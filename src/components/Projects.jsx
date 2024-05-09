@@ -1,25 +1,7 @@
 import { useState, useEffect } from "react";
 import { Box, Card, CardContent, Typography, CardMedia } from "@mui/material";
 
-const Projects = () => {
-  const [repos, setRepos] = useState([]);
-
-  useEffect(() => {
-    const getAllRepos = async () => {
-      try {
-        const response = await fetch(
-          `https://api.github.com/users/tmarr1426/repos`
-        );
-        const json = await response.json();
-        console.log("results", json);
-        setRepos(json.data);
-      } catch (err) {
-        console.log(`There was an error fetching the data from Github`, err);
-      }
-    };
-    getAllRepos();
-  }, []);
-
+const Projects = ({ repos }) => {
   return (
     <div>
       {repos.map((obj) => {

@@ -1,6 +1,5 @@
 import React from "react";
 import image from "../assets/Self/20230917_121857.jpg";
-import { NavLink, Route, Routes } from "react-router-dom";
 
 const Home = () => {
   return (
@@ -11,7 +10,7 @@ const Home = () => {
       </div>
       <div>
         <p>
-          My Name is Travis, and I am a software engineer looking to get
+          My Name is Travis, and I am a Junior Software Engineer looking to get
           involved in some fun projects.
         </p>
       </div>
@@ -69,11 +68,11 @@ const Home = () => {
             style={{ margin: "1em" }}
           />
           <br />
-          <input
+          <textarea
             type="text"
             name="Message"
             placeholder="Please type your message"
-            style={{ margin: "1em" }}
+            style={{ margin: "1em", height: "5em", width: "23em" }}
           />
           <br />
           <button>Submit</button>

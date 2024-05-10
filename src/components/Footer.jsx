@@ -6,7 +6,10 @@ const Footer = () => {
   console.log(location);
 
   return (
-    <div style={{ display: "flex", gap: "1em", justifyContent: "center" }}>
+    <div
+      className="footer"
+      style={{ display: "flex", gap: "1em", justifyContent: "center" }}
+    >
       <Link to="/home" style={{ color: "darkgreen" }}>
         Home
       </Link>

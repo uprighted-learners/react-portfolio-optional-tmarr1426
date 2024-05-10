@@ -10,25 +10,15 @@ const Hobbies = () => {
         display: "flex",
         flexDirection: "column",
         justifyContent: "center",
-        backgroundColor: "#ffffff",
-        color: "#000000",
-        borderRadius: "5em",
         height: "60em",
-        maxHeight: "auto",
-        width: "84em",
-        margin: "1em",
+        marginBottom: "1em",
+        marginTop: "1em",
       }}
     >
       <div>
         <h2>Hobbies</h2>
       </div>
-      <div
-        style={{
-          display: "flex",
-          flexDirection: "column",
-          alignItems: "center",
-        }}
-      >
+      <div>
         <div
           style={{
             display: "flex",
@@ -100,28 +90,31 @@ const Hobbies = () => {
           I've even started doing painting competitions which have been a blast!
         </p>
       </div>
-      <div
-        style={{
-          display: "flex",
-          flexDirection: "row",
-        }}
-      >
-        <img
-          src={ImageOne}
-          style={{ height: "15em", width: "20em", padding: ".5em" }}
-        />
-        <img
-          src={ImageTwo}
-          style={{ height: "15em", width: "20em", padding: ".5em" }}
-        />
-        <img
-          src={ImageThree}
-          style={{ height: "15em", width: "20em", padding: ".5em" }}
-        />
-        <img
-          src={ImageFour}
-          style={{ height: "15em", width: "20em", padding: ".5em" }}
-        />
+      <div>
+        <h3>Gallery</h3>
+        <div
+          style={{
+            display: "flex",
+            flexDirection: "row",
+          }}
+        >
+          <img
+            src={ImageOne}
+            style={{ height: "15em", width: "20em", padding: ".5em" }}
+          />
+          <img
+            src={ImageTwo}
+            style={{ height: "15em", width: "20em", padding: ".5em" }}
+          />
+          <img
+            src={ImageThree}
+            style={{ height: "15em", width: "20em", padding: ".5em" }}
+          />
+          <img
+            src={ImageFour}
+            style={{ height: "15em", width: "20em", padding: ".5em" }}
+          />
+        </div>
       </div>
     </div>
   );

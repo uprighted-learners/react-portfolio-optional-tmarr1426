@@ -1,6 +1,6 @@
 const About = () => {
   return (
-    <div>
+    <div style={{ marginLeft: "7.5em", marginRight: "7.5em" }}>
       <div>
         <h2>Want to know a little about me?</h2>
       </div>

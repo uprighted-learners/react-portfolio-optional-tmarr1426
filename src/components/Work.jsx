@@ -73,7 +73,10 @@ const Work = () => {
               <li>JavaScript</li>
               <li>HTML</li>
               <li>CSS</li>
+              <li>Node.js</li>
               <li>MongoDB</li>
+              <li>MySQL</li>
+              <li>Prisma</li>
               <li>Domain Hosting/Transferring</li>
               <li>Microsoft Powerpoint, Excel, Word</li>
               <li>Computer Technologies and Hardware</li>

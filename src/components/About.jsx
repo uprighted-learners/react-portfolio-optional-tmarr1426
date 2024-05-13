@@ -14,7 +14,8 @@ const About = () => {
               margin: "1em",
               boxShadow: "4px 4px 4px #000000",
               borderRadius: "1em",
-              backgroundColor: "#ECEAED",
+              backgroundColor: "bisque",
+              padding: "1rem",
             }}
           >
             <Box>
@@ -43,7 +44,8 @@ const About = () => {
                 margin: "1em",
                 boxShadow: "4px 4px 4px #000000",
                 borderRadius: "1em",
-                backgroundColor: "#ECEAED",
+                backgroundColor: "bisque",
+                padding: "1rem",
               }}
             >
               <Box>
@@ -58,15 +60,17 @@ const About = () => {
                   my in-laws where I began to help out with the backend of the
                   websites they created for marketing clients. I helped set up
                   domains, create the website, connect various programs (like
-                  mailchimp, or apps like divi) to the websites. Eventually
-                  steam ran out and they couldn't find more websites to create
-                  for clients and my job was limited. I recently just started a
-                  new job as a marketing web designer for a large engraving
-                  company, and am helping them renovate their websites to make
-                  them up to date. Now that I have dabbled in the backend and
-                  frontend designs of website so much, I decided to jump head
-                  first into programming as a full career. I think my love of
-                  video games has led me to want to learn more about
+                  mailchimp, or apps like divi) to the websites.
+                </p>
+                <p>
+                  Eventually steam ran out and they couldn't find more websites
+                  to create for clients and my job was limited. I recently just
+                  started a new job as a marketing web designer for a large
+                  engraving company, and am helping them renovate their websites
+                  to make them up to date. Now that I have dabbled in the
+                  backend and frontend designs of website so much, I decided to
+                  jump head first into programming as a full career. I think my
+                  love of video games has led me to want to learn more about
                   programming, and software development to hopefully learn
                   enough to help create the things that I have enjoyed.
                 </p>
@@ -81,7 +85,8 @@ const About = () => {
               margin: "1em",
               boxShadow: "4px 4px 4px #000000",
               borderRadius: "1em",
-              backgroundColor: "#ECEAED",
+              backgroundColor: "bisque",
+              padding: "1rem",
             }}
           >
             <Box>

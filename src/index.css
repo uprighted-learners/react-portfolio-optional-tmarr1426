@@ -29,7 +29,11 @@ body {
   place-items: center;
   min-width: 320px;
   max-width: auto;
-  background-color: rgba(19, 29, 22, 0.87);
+  background-image: radial-gradient(
+    circle,
+    rgba(7, 24, 11, 0.911),
+    rgba(46, 66, 63, 0.87)
+  );
 }
 
 h1 {

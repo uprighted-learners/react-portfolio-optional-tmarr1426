@@ -30,7 +30,7 @@ body {
   min-width: 320px;
   max-width: auto;
   background-image: radial-gradient(
-    ellipse at center,
+    circle at center,
     rgba(2, 17, 5, 0.911) 60%,
     rgba(73, 104, 99, 0.87)
   );

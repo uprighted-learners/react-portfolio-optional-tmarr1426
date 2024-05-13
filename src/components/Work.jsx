@@ -1,4 +1,3 @@
-import { useState } from "react";
 import { Button, Group, Text, Collapse, Box } from "@mantine/core";
 import { useDisclosure } from "@mantine/hooks";
 
@@ -18,7 +17,7 @@ const Work = () => {
         <div style={{ display: "flex", flexDirection: "row" }}>
           <div style={{ marginRight: "5em" }}>
             <div>
-              <h2>Work History</h2>
+              <h1>Work History</h1>
               <h2>Current Career</h2>
               <h4>UEI Group Services -- Marketing Web Developer</h4>
               <h5>December 2023 - present</h5>
@@ -92,7 +91,9 @@ const Work = () => {
       </div>
       <Box maw={400} mx="auto">
         <Group justify="center" mb={5}>
-          <Button onClick={toggle}>Past History</Button>
+          <Button onClick={toggle} style={{ marginTop: "5em" }}>
+            Past History
+          </Button>
         </Group>
 
         <Collapse in={opened}>

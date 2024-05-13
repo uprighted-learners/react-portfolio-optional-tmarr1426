@@ -4,8 +4,8 @@
   font-weight: 500;
 
   color-scheme: light dark;
-  color: rgba(18, 97, 29, 0.87);
-  background-color: rgba(18, 97, 29, 0.87);
+  color: rgba(19, 29, 22, 0.87);
+  background-color: rgba(19, 29, 22, 0.87);
 
   font-synthesis: none;
   text-rendering: optimizeLegibility;
@@ -29,7 +29,7 @@ body {
   place-items: center;
   min-width: 320px;
   max-width: auto;
-  background-color: rgba(159, 190, 163, 0.87);
+  background-color: rgba(19, 29, 22, 0.87);
 }
 
 h1 {

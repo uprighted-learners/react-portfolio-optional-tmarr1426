@@ -109,7 +109,7 @@ const Work = () => {
           >
             <div>
               <h3>Past History</h3>
-              <h4>C&S Mailing -- Web DeveloperProject Manager</h4>
+              <h4>C&S Mailing -- Web Developer/Project Manager</h4>
               <h5>July 2021 - December 2023</h5>
               <p>
                 As a Web Developer and Project Manager for C&S Mailing I work

@@ -28,7 +28,7 @@ const Hobbies = () => {
         >
           <p>Personally, I have a few things that I love to do everyday:</p>
           <div>
-            <ul style={{ display: "flex", width: "45em" }}>
+            <ul style={{ display: "flex", width: "50em" }}>
               <li>
                 <h4>Paint Miniatures</h4>
               </li>
@@ -68,27 +68,13 @@ const Hobbies = () => {
               </li>
             </ul>
           </div>
-          <p style={{ width: "40em", padding: "2em" }}>
+          <p style={{ width: "40em", padding: "1em" }}>
             I am very passionate about a lot of things in life. My family will
             always be my first love. I just love spending time with them and
             sharing the things that I enjoy with them. Every day is a new
             journey with kids and its better than I could have imagined.
           </p>
         </div>
-      </div>
-      <div
-        style={{
-          display: "flex",
-          justifyContent: "center",
-          marginTop: "1em",
-        }}
-      >
-        <p style={{ width: "40em" }}>
-          Painting Miniatures has become such an enjoyment for me that I post
-          pictures of them online for others to see. If you're interested, check
-          out my <a href="https://www.instagram.com/tmarrminis/">instagram!</a>{" "}
-          I've even started doing painting competitions which have been a blast!
-        </p>
       </div>
       <div>
         <h3>Gallery</h3>
@@ -114,6 +100,21 @@ const Hobbies = () => {
             src={ImageFour}
             style={{ height: "15em", width: "20em", padding: ".5em" }}
           />
+        </div>
+        <div
+          style={{
+            display: "flex",
+            justifyContent: "center",
+            marginTop: "1em",
+          }}
+        >
+          <p style={{ width: "40em" }}>
+            Painting Miniatures has become such an enjoyment for me that I post
+            pictures of them online for others to see. If you're interested,
+            check out my{" "}
+            <a href="https://www.instagram.com/tmarrminis/">instagram!</a> I've
+            even started doing painting competitions which have been a blast!
+          </p>
         </div>
       </div>
     </div>

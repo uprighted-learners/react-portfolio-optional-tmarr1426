@@ -1,37 +1,21 @@
 const express = require("express");
-const bodyParser = require("body-parser");
-const nodemailer = require("nodemailer");
+const cors = require("cors");
 const app = express();
 
-app.use(bodyParser.json());
+const emailController = require("./controllers/email_controller");
 
-// Define your email sending route
-app.post("/send-email", async (req, res) => {
-  const { firstName, lastName, email, phone, message } = req.body;
+const PORT = process.env.PORT || 5000;
 
-  // Create a Nodemailer transporter
-  let transporter = nodemailer.createTransport({
-    service: "gmail",
-    auth: {
-      user: "tmarr1426@gmail.com",
-      pass: "Lbelle17@",
-    },
-  });
+app.use(express.json());
 
-  // Send mail with defined transport object
-  let info = await transporter.sendMail({
-    from: "your-email@gmail.com",
-    to: "recipient-email@example.com",
-    subject: "New Form Submission",
-    text: `Name: ${firstName} ${lastName}\nEmail: ${email}\nPhone: ${phone}\nMessage: ${message}`,
-  });
-
-  console.log("Message sent: %s", info.messageId);
-  res.send("Email sent!");
-});
+app.use(cors());
 
 // Start the server
-const PORT = 5000;
 app.listen(PORT, () => {
-  console.log(`Server running on port ${PORT}`);
+  try {
+    console.log("*", repeat(10));
+    console.log(`Server running on port ${PORT}`);
+  } catch (err) {
+    console.log("Error connecting", err);
+  }
 });

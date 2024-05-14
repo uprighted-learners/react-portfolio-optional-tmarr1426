@@ -1,4 +1,4 @@
-import { Box, Card, CardContent, Typography, CardMedia } from "@mui/material";
+import { Box, Card, CardContent } from "@mui/material";
 
 const Projects = ({ repos }) => {
   return (
@@ -6,6 +6,7 @@ const Projects = ({ repos }) => {
       <div></div>
       <div>
         <h1>Github Repos:</h1>
+        <h4>Github Username: tmarr1426</h4>
         {repos.map((obj) => {
           console.log(obj);
           return (

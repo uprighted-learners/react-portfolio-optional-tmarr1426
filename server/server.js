@@ -1,10 +1,13 @@
+require("dotenv").config();
 const express = require("express");
 const cors = require("cors");
 const app = express();
 
-const emailController = require("./controllers/email_controller");
+const emailController = require("./controllers/index");
 
 const PORT = process.env.PORT || 5000;
+
+app.use(emailController);
 
 app.use(express.json());
 

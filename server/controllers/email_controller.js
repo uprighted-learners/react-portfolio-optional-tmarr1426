@@ -5,14 +5,14 @@ router.post("/send-email", async (req, res) => {
   const transporter = nodemailer.createTransport({
     service: "gmail",
     auth: {
-      user: "your-email@gmail.com",
-      pass: "your-email-password",
+      user: "tmarr1426@gmail.com",
+      pass: "Lbelle17@",
     },
   });
 
   // Send mail with defined transport object
   let info = await transporter.sendMail({
-    from: "your-email@gmail.com",
+    from: "tmarr1426@gmail.com",
     to: "recipient-email@example.com",
     subject: "New Form Submission",
     text: `Name: ${firstName} ${lastName}\nEmail: ${email}\nPhone: ${phone}\nMessage: ${message}`,

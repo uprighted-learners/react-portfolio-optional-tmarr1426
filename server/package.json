@@ -1,5 +1,5 @@
 {
-  "name": "server-blueprint",
+  "name": "server",
   "version": "1.0.0",
   "description": "A basic Node.js server blueprint",
   "main": "server.js",
@@ -11,6 +11,7 @@
     "cors": "^2.8.5",
     "dotenv": "^16.4.5",
     "express": "^4.19.2",
+    "nodemailer": "^6.9.13",
     "nodemon": "^3.1.0"
   },
   "keywords": [],

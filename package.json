@@ -4,7 +4,7 @@
   "version": "1.0.0",
   "type": "module",
   "author": {
-    "name": "Joshua Burke, Upright Education Inc."
+    "name": "Travis Marrocco, Upright Education Inc."
   },
   "scripts": {
     "dev": "vite",

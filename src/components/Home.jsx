@@ -1,7 +1,37 @@
-import React from "react";
+import React, { useState } from "react";
 import image from "../assets/Self/20230917_121857.jpg";
 
 const Home = () => {
+  const [formData, setFormData] = useState({
+    firstName: "",
+    lastName: "",
+    email: "",
+    phone: "",
+    message: "",
+  });
+
+  const handleChange = (e) => {
+    const { name, value } = e.target;
+    setFormData({ ...formData, [name]: value });
+  };
+
+  const handleSubmit = async (e) => {
+    e.preventDefault();
+    try {
+      const response = await fetch("http://localhost:5000/send-email", {
+        method: "POST",
+        headers: {
+          "Content-Type": "application/json",
+        },
+        body: JSON.stringify(formData),
+      });
+      const data = await response.text();
+      console.log(data); // Should log 'Email sent!' if successful
+    } catch (error) {
+      console.error("Error sending email:", error);
+    }
+  };
+
   return (
     <div style={{ display: "flex", flexDirection: "column" }}>
       <div>
@@ -41,18 +71,20 @@ const Home = () => {
           If you're looking to get ahold of me, you can fill out the form below
           to send me an email!
         </h4>
-        <form>
+        <form onSubmit={handleSubmit}>
           <input
             type="text"
             name="first name"
             placeholder="First Name"
             style={{ margin: "1em" }}
+            onChange={handleChange}
           />
           <input
             type="text"
             name="last name"
             placeholder="Last Name"
             style={{ margin: "1em" }}
+            onChange={handleChange}
           />
           <br />
           <input
@@ -60,12 +92,14 @@ const Home = () => {
             name="email"
             placeholder="Email"
             style={{ margin: "1em" }}
+            onChange={handleChange}
           />
           <input
             type="number"
             name="phone"
             placeholder="Phone Number"
             style={{ margin: "1em" }}
+            onChange={handleChange}
           />
           <br />
           <textarea
@@ -73,9 +107,10 @@ const Home = () => {
             name="Message"
             placeholder="Please type your message"
             style={{ margin: "1em", height: "5em", width: "23em" }}
+            onChange={handleChange}
           />
           <br />
-          <button>Submit</button>
+          <button type="submit">Submit</button>
         </form>
       </div>
     </div>

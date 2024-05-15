@@ -1,4 +1,4 @@
-import { Box, Card, CardContent, Typography, CardMedia } from "@mui/material";
+import { Box, Card } from "@mui/material";
 
 const About = () => {
   return (

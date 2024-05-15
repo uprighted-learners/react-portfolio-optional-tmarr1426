@@ -3,7 +3,7 @@
   "private": true,
   "version": "1.0.0",
   "type": "module",
-  "author": "Travis Marrocco, Upright Education Inc.",
+  "author": "Travis Marrocco",
   "scripts": {
     "dev": "vite",
     "build": "vite build",

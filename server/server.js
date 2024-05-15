@@ -1,25 +1,38 @@
-require("dotenv").config();
+//
 const express = require("express");
-const cors = require("cors");
+const bodyParser = require("body-parser");
+const nodemailer = require("nodemailer");
 const app = express();
 
-const emailController = require("./controllers/index");
+app.use(bodyParser.json());
 
-const validateSession = require("./middleware/validate-session");
-const PORT = process.env.PORT || 5000;
+// Define your email sending route
+app.post("/send-email", async (req, res) => {
+  const { firstName, lastName, email, phone, message } = req.body;
 
-app.use(express.json());
-app.use(cors());
-app.use(express.urlencoded({ extended: true }));
-app.use(validateSession);
-app.use(emailController);
+  // Create a Nodemailer transporter
+  let transporter = nodemailer.createTransport({
+    service: "gmail",
+    auth: {
+      user: "tmarr1426@gmail.com",
+      pass: "Lbelle17@",
+    },
+  });
+
+  // Send mail with defined transport object
+  let info = await transporter.sendMail({
+    from: { email },
+    to: "tmarr1426@gmail.com",
+    subject: "New Form Submission",
+    text: `Name: ${firstName} ${lastName}\nEmail: ${email}\nPhone: ${phone}\nMessage: ${message}`,
+  });
+
+  console.log("Message sent: %s", info.messageId);
+  res.send("Email sent!");
+});
 
 // Start the server
+const PORT = 5000;
 app.listen(PORT, () => {
-  try {
-    console.log("*", repeat(10));
-    console.log(`Server running on port ${PORT}`);
-  } catch (err) {
-    console.log("Error connecting", err);
-  }
+  console.log(`Server running on port ${PORT}`);
 });

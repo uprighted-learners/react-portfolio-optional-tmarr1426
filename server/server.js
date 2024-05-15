@@ -5,13 +5,14 @@ const app = express();
 
 const emailController = require("./controllers/index");
 
+const validateSession = require("./middleware/validate-session");
 const PORT = process.env.PORT || 5000;
 
-app.use(emailController);
-
 app.use(express.json());
-
 app.use(cors());
+app.use(express.urlencoded({ extended: true }));
+app.use(validateSession);
+app.use(emailController);
 
 // Start the server
 app.listen(PORT, () => {

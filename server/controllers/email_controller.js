@@ -1,3 +1,7 @@
+const express = require("express");
+const router = express.Router();
+const nodemailer = require("nodemailer");
+
 router.post("/send-email", async (req, res) => {
   const { firstName, lastName, email, phone, message } = req.body;
 

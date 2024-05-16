@@ -18,7 +18,7 @@ const Work = () => {
           <div style={{ marginRight: "5em" }}>
             <div>
               <h1>Work History</h1>
-              <h2>Current Career</h2>
+              <h2>Web Developer Experience</h2>
               <h4>UEI Group Services -- Marketing Web Developer</h4>
               <h5>December 2023 - present</h5>
               <p>
@@ -29,6 +29,17 @@ const Work = () => {
                 website updates such as product updates, or page updates, as
                 well as maintain and fix any errors or issues that arise for the
                 websites. I handle frontend and backend updates and fixes.
+              </p>
+              <h4>C&S Mailing -- Web Developer/Project Manager</h4>
+              <h5>July 2021 - December 2023</h5>
+              <p>
+                As a Web Developer and Project Manager for C&S Mailing I work
+                with a group of designers to deliver high quality websites for
+                ecommerce brands, politicians, rental complexes, and other
+                companies. My main tasks included communicating with the client
+                about their needs, setting up the work order for the team and
+                facilitating due dates, setting up frontend and backend coding,
+                and setting up backend marketing programs.
               </p>
             </div>
             <div>
@@ -62,8 +73,9 @@ const Work = () => {
               textAlign: "left",
               backgroundColor: "bisque",
               color: "darkslategrey",
-              borderRadius: "15px",
-              padding: "10px",
+              borderRadius: "2.5em",
+              padding: "1em",
+              height: "50em",
             }}
           >
             <h2>Personal Skills and experience</h2>
@@ -109,17 +121,6 @@ const Work = () => {
           >
             <div>
               <h3>Past History</h3>
-              <h4>C&S Mailing -- Web Developer/Project Manager</h4>
-              <h5>July 2021 - December 2023</h5>
-              <p>
-                As a Web Developer and Project Manager for C&S Mailing I work
-                with a group of designers to deliver high quality websites for
-                ecommerce brands, politicians, rental complexes, and other
-                companies. My main tasks included communicating with the client
-                about their needs, setting up the work order for the team and
-                facilitating due dates, setting up frontend and backend coding,
-                and setting up backend marketing programs.
-              </p>
               <h4>C&S Mailing -- Product Fulfillment</h4>
               <h5>July 2021 - December 2023</h5>
               <p>

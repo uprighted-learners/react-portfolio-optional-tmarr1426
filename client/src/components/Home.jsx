@@ -2,17 +2,32 @@ import React, { useState } from "react";
 import image from "../assets/Self/20230917_121857.jpg";
 
 const Home = () => {
-  const [formData, setFormData] = useState({
-    firstName: "",
-    lastName: "",
-    email: "",
-    phone: "",
-    message: "",
-  });
+  const [firstName, setFirstName] = useState("");
+  const [lastName, setLastName] = useState("");
+  const [email, setEmail] = useState("");
+  const [phone, setPhone] = useState("");
+  const [message, setMessage] = useState("");
 
-  const handleChange = (e) => {
-    const { name, value } = e.target;
-    setFormData({ ...formData, [name]: value });
+  const handleChange = (state, value) => {
+    switch (state) {
+      case "first name":
+        setFirstName(value);
+        break;
+      case "last name":
+        setLastName(value);
+        break;
+      case "email":
+        setEmail(value);
+        break;
+      case "phone number":
+        setPhone(value);
+        break;
+      case "message":
+        setMessage(value);
+        break;
+      default:
+        console.log("Something went wrong");
+    }
   };
 
   const handleSubmit = async (e) => {
@@ -23,7 +38,13 @@ const Home = () => {
         headers: {
           "Content-Type": "application/json",
         },
-        body: JSON.stringify(formData),
+        body: JSON.stringify({
+          first: firstName,
+          last: lastName,
+          email: email,
+          phone: phone,
+          mesage: message,
+        }),
       });
       const data = await response.text();
       console.log(data); // Should log 'Email sent!' if successful
@@ -71,20 +92,20 @@ const Home = () => {
           If you're looking to get ahold of me, you can fill out the form below
           to send me an email!
         </h4>
-        <form onSubmit={handleSubmit}>
+        <form>
           <input
             type="text"
             name="first name"
             placeholder="First Name"
             style={{ margin: "1em" }}
-            onChange={handleChange}
+            onChange={(e) => handleChange("first name", e.target.value)}
           />
           <input
             type="text"
             name="last name"
             placeholder="Last Name"
             style={{ margin: "1em" }}
-            onChange={handleChange}
+            onChange={(e) => handleChange("last name", e.target.value)}
           />
           <br />
           <input
@@ -92,14 +113,14 @@ const Home = () => {
             name="email"
             placeholder="Email"
             style={{ margin: "1em" }}
-            onChange={handleChange}
+            onChange={(e) => handleChange("email", e.target.value)}
           />
           <input
             type="number"
             name="phone"
             placeholder="Phone Number"
             style={{ margin: "1em" }}
-            onChange={handleChange}
+            onChange={(e) => handleChange("phone number", e.target.value)}
           />
           <br />
           <textarea
@@ -107,10 +128,10 @@ const Home = () => {
             name="Message"
             placeholder="Please type your message"
             style={{ margin: "1em", height: "5em", width: "23em" }}
-            onChange={handleChange}
+            onChange={(e) => handleChange("message", e.target.value)}
           />
           <br />
-          <button type="submit">Submit</button>
+          <button onSubmit={handleSubmit}>Submit</button>
         </form>
       </div>
     </div>

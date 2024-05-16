@@ -5,6 +5,7 @@ const bodyParser = require("body-parser");
 const nodemailer = require("nodemailer");
 const app = express();
 
+const PASSWORD = process.env.PASSWORD;
 app.use(bodyParser.json());
 
 // Define your email sending route
@@ -33,7 +34,7 @@ app.post("/send-email", async (req, res) => {
 });
 
 // Start the server
-const PORT = 5000;
+const PORT = process.env.PORT;
 app.listen(PORT, () => {
   console.log(`Server running on port ${PORT}`);
 });

@@ -6,6 +6,7 @@ const nodemailer = require("nodemailer");
 const app = express();
 
 const PASSWORD = process.env.PASSWORD;
+const EMAIL = process.env.EMAIL;
 app.use(bodyParser.json());
 
 // Define your email sending route
@@ -16,7 +17,7 @@ app.post("/send-email", async (req, res) => {
   const transporter = nodemailer.createTransport({
     service: "smtp.gmail.com",
     auth: {
-      user: "tmarr1426@gmail.com",
+      user: EMAIL,
       pass: PASSWORD,
     },
   });
@@ -24,7 +25,7 @@ app.post("/send-email", async (req, res) => {
   // Send mail with defined transport object
   let info = await transporter.sendMail({
     from: { email },
-    to: "tmarr1426@gmail.com",
+    to: EMAIL,
     subject: "New Form Submission",
     text: `Name: ${firstName} ${lastName}\nEmail: ${email}\nPhone: ${phone}\nMessage: ${message}`,
   });

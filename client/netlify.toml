@@ -1,0 +1,15 @@
+[build]
+  publish = "build"
+  command = "npm run dev"
+
+[[redirects]]
+  from = "/"
+  to = "/home"
+  status = 301
+  force = true
+
+[[headers]]
+  for = "/*"
+  [headers.values]
+    Content-Security-Policy = "default-src 'self'"
+    X-Frame-Options = "DENY"

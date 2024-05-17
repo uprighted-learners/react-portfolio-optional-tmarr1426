@@ -33,7 +33,7 @@ const Home = () => {
   const handleSubmit = async (e) => {
     e.preventDefault();
     try {
-      const response = await fetch("http://tcmarrocco.com/send-email", {
+      const response = await fetch("http://tcmarrocco.com/home/send-email", {
         method: "POST",
         headers: {
           "Content-Type": "application/json",

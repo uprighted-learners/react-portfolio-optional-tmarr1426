@@ -82,7 +82,7 @@ const Home = () => {
       <div>
         <h4>
           If you're looking to get ahold of me, please email me at
-          tmarr1426@gmail.com.
+          <a href="mailto: tmarr1426@gmail.com">tmarr1426@gmail.com</a>.
         </h4>
       </div>
       {/* <div

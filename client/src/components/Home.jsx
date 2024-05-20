@@ -79,7 +79,13 @@ const Home = () => {
         />
       </div>
       <br />
-      <div
+      <div>
+        <h4>
+          If you're looking to get ahold of me, please email me at
+          tmarr1426@gmail.com.
+        </h4>
+      </div>
+      {/* <div
         style={{
           backgroundColor: "whitesmoke",
           color: "black",
@@ -133,7 +139,7 @@ const Home = () => {
           <br />
           <button onSubmit={handleSubmit}>Submit</button>
         </form>
-      </div>
+      </div> */}
     </div>
   );
 };

@@ -79,13 +79,13 @@ const Home = () => {
         />
       </div>
       <br />
-      <div>
+      {/* <div>
         <h4>
           If you're looking to get ahold of me, please email me at
           <a href="mailto: tmarr1426@gmail.com"> tmarr1426@gmail.com</a>.
         </h4>
-      </div>
-      {/* <div
+      </div> */}
+      <div
         style={{
           backgroundColor: "whitesmoke",
           color: "black",
@@ -98,20 +98,18 @@ const Home = () => {
           If you're looking to get ahold of me, you can fill out the form below
           to send me an email!
         </h4>
-        <form>
+        <form action="https://formsubmit.co/tmarr1426@gmail.com" method="POST">
           <input
             type="text"
             name="first name"
             placeholder="First Name"
             style={{ margin: "1em" }}
-            onChange={(e) => handleChange("first name", e.target.value)}
           />
           <input
             type="text"
             name="last name"
             placeholder="Last Name"
             style={{ margin: "1em" }}
-            onChange={(e) => handleChange("last name", e.target.value)}
           />
           <br />
           <input
@@ -119,14 +117,12 @@ const Home = () => {
             name="email"
             placeholder="Email"
             style={{ margin: "1em" }}
-            onChange={(e) => handleChange("email", e.target.value)}
           />
           <input
             type="number"
             name="phone"
             placeholder="Phone Number"
             style={{ margin: "1em" }}
-            onChange={(e) => handleChange("phone number", e.target.value)}
           />
           <br />
           <textarea
@@ -134,12 +130,11 @@ const Home = () => {
             name="Message"
             placeholder="Please type your message"
             style={{ margin: "1em", height: "5em", width: "23em" }}
-            onChange={(e) => handleChange("message", e.target.value)}
           />
           <br />
-          <button onSubmit={handleSubmit}>Submit</button>
+          <button type="submit">Submit</button>
         </form>
-      </div> */}
+      </div>
     </div>
   );
 };

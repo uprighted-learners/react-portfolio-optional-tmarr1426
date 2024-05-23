@@ -98,7 +98,10 @@ const Home = () => {
           If you're looking to get ahold of me, you can fill out the form below
           to send me an email!
         </h4>
-        <form action="https://formsubmit.co/tmarr1426@gmail.com" method="POST">
+        <form
+          action="https://formsubmit.co/e2e45f31d48331f3f92d882dea32972c"
+          method="POST"
+        >
           <input
             type="text"
             name="first name"

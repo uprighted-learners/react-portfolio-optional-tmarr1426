@@ -61,13 +61,55 @@ const Home = () => {
       <div>
         <h1>Welcome to my Portfolio!</h1>
       </div>
-      <div style={{ display: "flex", flexDirection: "row", gap: "1em" }}>
-        <div>
+      <div style={{ display: "flex", flexDirection: "row", gap: "2em" }}>
+        <div style={{ display: "flex", flexDirection: "column", gap: "1em" }}>
           <p style={{ width: "30em" }}>
             My Name is Travis, and I am a Junior Software Engineer looking to
             get involved in some fun projects. I am a passionate person with
             everything I do and I fuel my job with that passion.
           </p>
+          <h1>Live Projects:</h1>
+          <Card
+            style={{
+              width: "30em",
+              margin: "1em",
+              boxShadow: "4px 4px 4px #000000",
+              borderRadius: "1em",
+              backgroundColor: "#ECEAED",
+            }}
+          >
+            <Box sx={{ display: "flex", flexDirection: "row" }}>
+              <CardContent sx={{ flex: "1 0 auto" }}>
+                <Box
+                  sx={{
+                    display: "flex",
+                    flexDirection: "row",
+                    justifyContent: "center",
+                    alignItems: "center",
+                  }}
+                >
+                  <img
+                    src={DriveTime}
+                    alt="DriveTime Logo"
+                    style={{ height: "10em" }}
+                  />
+                  <a
+                    href="https://drivetime.netlify.app"
+                    style={{
+                      fontSize: 32,
+                      textDecoration: "underline 2px",
+                      fontWeight: "700",
+                      textAlign: "left",
+                    }}
+                    color="#494888"
+                    gutterBottom
+                  >
+                    DriveTime Live
+                  </a>
+                </Box>
+              </CardContent>
+            </Box>
+          </Card>
         </div>
         <br />
         <div>
@@ -84,50 +126,6 @@ const Home = () => {
         </div>
       </div>
       <br />
-      <div>
-        <h1>Live Projects:</h1>
-        <Card
-          style={{
-            width: "30em",
-            margin: "1em",
-            boxShadow: "4px 4px 4px #000000",
-            borderRadius: "1em",
-            backgroundColor: "#ECEAED",
-          }}
-        >
-          <Box sx={{ display: "flex", flexDirection: "row" }}>
-            <CardContent sx={{ flex: "1 0 auto" }}>
-              <Box
-                sx={{
-                  display: "flex",
-                  flexDirection: "row",
-                  justifyContent: "center",
-                  alignItems: "center",
-                }}
-              >
-                <img
-                  src={DriveTime}
-                  alt="DriveTime Logo"
-                  style={{ height: "10em" }}
-                />
-                <a
-                  href="https://drivetime.netlify.app"
-                  style={{
-                    fontSize: 32,
-                    textDecoration: "underline 2px",
-                    fontWeight: "700",
-                    textAlign: "left",
-                  }}
-                  color="#494888"
-                  gutterBottom
-                >
-                  DriveTime Live
-                </a>
-              </Box>
-            </CardContent>
-          </Box>
-        </Card>
-      </div>
       <div
         style={{
           backgroundColor: "whitesmoke",

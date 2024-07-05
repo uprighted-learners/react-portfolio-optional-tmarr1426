@@ -1,5 +1,8 @@
 import React, { useState } from "react";
 import image from "../assets/Self/20230917_121857.jpg";
+import { Box, Card, CardContent } from "@mui/material";
+
+import DriveTime from "../assets/Self/rainbow-drive-time.png";
 
 const Home = () => {
   const [firstName, setFirstName] = useState("");
@@ -57,34 +60,72 @@ const Home = () => {
     <div style={{ display: "flex", flexDirection: "column" }}>
       <div>
         <h1>Welcome to my Portfolio!</h1>
-        <img></img>
       </div>
-      <div>
-        <p>
-          My Name is Travis, and I am a Junior Software Engineer looking to get
-          involved in some fun projects.
-        </p>
+      <div style={{ display: "flex", flexDirection: "row", gap: "2em" }}>
+        <div style={{ display: "flex", flexDirection: "column", gap: "1em" }}>
+          <p style={{ width: "30em" }}>
+            My Name is Travis, and I am a Junior Software Engineer looking to
+            get involved in some fun projects. I am a passionate person with
+            everything I do and I fuel my job with that passion.
+          </p>
+          <h1>Live Projects:</h1>
+          <Card
+            style={{
+              width: "30em",
+              margin: "1em",
+              boxShadow: "4px 4px 4px #000000",
+              borderRadius: "1em",
+              backgroundColor: "#ECEAED",
+            }}
+          >
+            <Box sx={{ display: "flex", flexDirection: "row" }}>
+              <CardContent sx={{ flex: "1 0 auto" }}>
+                <Box
+                  sx={{
+                    display: "flex",
+                    flexDirection: "row",
+                    justifyContent: "center",
+                    alignItems: "center",
+                  }}
+                >
+                  <img
+                    src={DriveTime}
+                    alt="DriveTime Logo"
+                    style={{ height: "10em" }}
+                  />
+                  <a
+                    href="https://drivetime.netlify.app"
+                    style={{
+                      fontSize: 32,
+                      textDecoration: "underline 2px",
+                      fontWeight: "700",
+                      textAlign: "left",
+                    }}
+                    color="#494888"
+                    gutterBottom
+                  >
+                    DriveTime Live
+                  </a>
+                </Box>
+              </CardContent>
+            </Box>
+          </Card>
+        </div>
+        <br />
+        <div>
+          <img
+            src={image}
+            style={{
+              height: "25em",
+              width: "20em",
+              padding: ".5em",
+              border: "solid",
+              borderColor: "darkgreen",
+            }}
+          />
+        </div>
       </div>
       <br />
-      <div>
-        <img
-          src={image}
-          style={{
-            height: "25em",
-            width: "20em",
-            padding: ".5em",
-            border: "solid",
-            borderColor: "darkgreen",
-          }}
-        />
-      </div>
-      <br />
-      {/* <div>
-        <h4>
-          If you're looking to get ahold of me, please email me at
-          <a href="mailto: tmarr1426@gmail.com"> tmarr1426@gmail.com</a>.
-        </h4>
-      </div> */}
       <div
         style={{
           backgroundColor: "whitesmoke",

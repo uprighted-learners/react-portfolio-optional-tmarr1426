@@ -93,19 +93,26 @@ const Home = () => {
                     alt="DriveTime Logo"
                     style={{ height: "10em" }}
                   />
-                  <a
-                    href="https://drivetime.netlify.app"
-                    style={{
-                      fontSize: 32,
-                      textDecoration: "underline 2px",
-                      fontWeight: "700",
-                      textAlign: "left",
-                    }}
-                    color="#494888"
-                    gutterBottom
-                  >
-                    DriveTime Live
-                  </a>
+                  <CardContent>
+                    <a
+                      href="https://drivetime.netlify.app"
+                      style={{
+                        fontSize: 32,
+                        textDecoration: "underline 2px",
+                        fontWeight: "700",
+                        textAlign: "left",
+                      }}
+                      color="#494888"
+                      gutterBottom
+                    >
+                      DriveTime Live
+                    </a>
+                    <p style={{ width: "13em" }}>
+                      DriveTime is a tracking web app that allows a new and
+                      young driver to track their driving hours, conditions,
+                      distance, and more.
+                    </p>
+                  </CardContent>
                 </Box>
               </CardContent>
             </Box>

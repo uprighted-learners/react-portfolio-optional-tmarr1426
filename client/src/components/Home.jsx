@@ -106,6 +106,14 @@ const Home = () => {
                   >
                     DriveTime Live
                   </a>
+                  <p>
+                    DriveTime is a tracking web app that allows a new and young
+                    driver to track their driving hours, conditions, distance,
+                    and more. It allows parents access to their children's stats
+                    to track where they are at in their driving education and
+                    see when they are ready to attempt getting their own
+                    license.
+                  </p>
                 </Box>
               </CardContent>
             </Box>

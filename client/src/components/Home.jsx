@@ -108,9 +108,9 @@ const Home = () => {
                       DriveTime Live
                     </a>
                     <p style={{ width: "13em" }}>
-                      DriveTime is a tracking web app that allows a new and
-                      young driver to track their driving hours, conditions,
-                      distance, and more.
+                      DriveTime is a web app that allows a new and young driver
+                      to track their driving hours, conditions, distance, and
+                      more.
                     </p>
                   </CardContent>
                 </Box>

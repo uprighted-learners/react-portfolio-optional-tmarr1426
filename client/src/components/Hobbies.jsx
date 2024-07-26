@@ -2,6 +2,14 @@ import ImageOne from "../assets/Miniatures/DSC_0484_result.png";
 import ImageTwo from "../assets/Miniatures/DSC_0486_result.png";
 import ImageThree from "../assets/Miniatures/DSC_0507_result.png";
 import ImageFour from "../assets/Miniatures/DSC_0531_result.jpg";
+import ImageFive from "../assets/Miniatures/DSC_0180.jpg";
+import ImageSix from "../assets/Miniatures/DSC_0202.jpg";
+import ImageSeven from "../assets/Miniatures/DSC_0207.jpg";
+import ImageEight from "../assets/Miniatures/DSC_0219.jpg";
+import ImageNine from "../assets/Miniatures/PXL_20240405_130929601.jpg";
+import ImageTen from "../assets/Miniatures/PXL_20240624_011745559.jpg";
+import ImageEleven from "../assets/Miniatures/PXL_20240720_024605978.jpg";
+import ImageTwelve from "../assets/Miniatures/PXL_20240720_024612681.jpg";
 
 const Hobbies = () => {
   return (
@@ -10,7 +18,6 @@ const Hobbies = () => {
         display: "flex",
         flexDirection: "column",
         justifyContent: "center",
-        height: "60em",
         marginBottom: "1em",
         marginTop: "1em",
       }}
@@ -81,25 +88,74 @@ const Hobbies = () => {
         <div
           style={{
             display: "flex",
-            flexDirection: "row",
+            flexDirection: "column",
           }}
         >
-          <img
-            src={ImageOne}
-            style={{ height: "15em", width: "20em", padding: ".5em" }}
-          />
-          <img
-            src={ImageTwo}
-            style={{ height: "15em", width: "20em", padding: ".5em" }}
-          />
-          <img
-            src={ImageThree}
-            style={{ height: "15em", width: "20em", padding: ".5em" }}
-          />
-          <img
-            src={ImageFour}
-            style={{ height: "15em", width: "20em", padding: ".5em" }}
-          />
+          <div
+            style={{
+              display: "flex",
+              flexDirection: "row",
+            }}
+          >
+            <img
+              src={ImageOne}
+              style={{ height: "15em", width: "20em", padding: ".5em" }}
+            />
+            <img
+              src={ImageTwo}
+              style={{ height: "15em", width: "20em", padding: ".5em" }}
+            />
+            <img
+              src={ImageThree}
+              style={{ height: "15em", width: "20em", padding: ".5em" }}
+            />
+            <img
+              src={ImageFour}
+              style={{ height: "15em", width: "20em", padding: ".5em" }}
+            />
+          </div>
+          <div>
+            <img
+              src={ImageFive}
+              style={{ height: "15em", width: "20em", padding: ".5em" }}
+            />
+
+            <img
+              src={ImageSix}
+              style={{ height: "15em", width: "20em", padding: ".5em" }}
+            />
+
+            <img
+              src={ImageSeven}
+              style={{ height: "15em", width: "20em", padding: ".5em" }}
+            />
+
+            <img
+              src={ImageEight}
+              style={{ height: "15em", width: "20em", padding: ".5em" }}
+            />
+          </div>
+          <div>
+            <img
+              src={ImageNine}
+              style={{ height: "15em", width: "15em", padding: ".5em" }}
+            />
+
+            <img
+              src={ImageTen}
+              style={{ height: "15em", width: "15em", padding: ".5em" }}
+            />
+
+            <img
+              src={ImageEleven}
+              style={{ height: "15em", width: "15em", padding: ".5em" }}
+            />
+
+            <img
+              src={ImageTwelve}
+              style={{ height: "15em", width: "15em", padding: ".5em" }}
+            />
+          </div>
         </div>
         <div
           style={{

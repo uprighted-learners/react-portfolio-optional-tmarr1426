@@ -1,7 +1,7 @@
 :root {
   font-family: "Roboto", sans-serif;
   font-size: 16px;
-  font-weight: 500;
+  font-weight: 300;
 
   color-scheme: light dark;
   color: rgba(19, 29, 22, 0.87);
@@ -30,7 +30,7 @@ body {
   min-width: 320px;
   max-width: auto;
   background-image: radial-gradient(
-    circle at center,
+    circle at bottom,
     rgba(2, 17, 5, 0.911) 60%,
     rgba(73, 104, 99, 0.87)
   );
@@ -38,7 +38,12 @@ body {
 
 h1 {
   font-size: 3em;
+  font-weight: 300;
   line-height: 1.1;
+}
+
+h2 {
+  font-weight: 200;
 }
 
 button {

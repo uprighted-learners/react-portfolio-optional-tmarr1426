@@ -138,22 +138,22 @@ const Hobbies = () => {
           <div>
             <img
               src={ImageNine}
-              style={{ height: "15em", width: "15em", padding: ".5em" }}
+              style={{ height: "20em", width: "15em", padding: ".5em" }}
             />
 
             <img
               src={ImageTen}
-              style={{ height: "15em", width: "15em", padding: ".5em" }}
+              style={{ height: "20em", width: "15em", padding: ".5em" }}
             />
 
             <img
               src={ImageEleven}
-              style={{ height: "15em", width: "15em", padding: ".5em" }}
+              style={{ height: "20em", width: "15em", padding: ".5em" }}
             />
 
             <img
               src={ImageTwelve}
-              style={{ height: "15em", width: "15em", padding: ".5em" }}
+              style={{ height: "20em", width: "15em", padding: ".5em" }}
             />
           </div>
         </div>

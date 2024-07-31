@@ -3,6 +3,8 @@ import image from "../assets/Self/20230917_121857.jpg";
 import { Box, Card, CardContent } from "@mui/material";
 
 import DriveTime from "../assets/Self/rainbow-drive-time.png";
+import MyCircle from "../assets/Self/mycircle_v2.png";
+import Jeopardy from "../assets/Self/jeopardy.jpg";
 import Logos from "../assets/Self/Code_logos.png";
 
 const Home = () => {
@@ -155,9 +157,9 @@ const Home = () => {
                 }}
               >
                 <img
-                  src={DriveTime}
-                  alt="DriveTime Logo"
-                  style={{ height: "10em" }}
+                  src={MyCircle}
+                  alt="MyCircle Logo"
+                  style={{ height: "5em" }}
                 />
                 <CardContent>
                   <a
@@ -202,9 +204,9 @@ const Home = () => {
                 }}
               >
                 <img
-                  src={DriveTime}
-                  alt="DriveTime Logo"
-                  style={{ height: "10em" }}
+                  src={Jeopardy}
+                  alt="Jeopardy Logo"
+                  style={{ height: "7em" }}
                 />
                 <CardContent>
                   <a

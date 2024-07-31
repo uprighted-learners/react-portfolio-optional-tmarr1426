@@ -1,3 +1,4 @@
+import React from "react";
 import ImageOne from "../assets/Miniatures/DSC_0484_result.png";
 import ImageTwo from "../assets/Miniatures/DSC_0486_result.png";
 import ImageThree from "../assets/Miniatures/DSC_0507_result.png";
@@ -10,8 +11,17 @@ import ImageNine from "../assets/Miniatures/PXL_20240405_130929601.jpg";
 import ImageTen from "../assets/Miniatures/PXL_20240624_011745559.jpg";
 import ImageEleven from "../assets/Miniatures/PXL_20240720_024605978.jpg";
 import ImageTwelve from "../assets/Miniatures/PXL_20240720_024612681.jpg";
+import Carousel from "./Carousel";
 
 const Hobbies = () => {
+  const settings = {
+    dots: true,
+    infinite: true,
+    speed: 500,
+    slidesToShow: 4,
+    slidesToScroll: 1,
+  };
+
   return (
     <div
       style={{
@@ -97,24 +107,33 @@ const Hobbies = () => {
               flexDirection: "row",
             }}
           >
-            <img
-              src={ImageOne}
-              style={{ height: "15em", width: "20em", padding: ".5em" }}
-            />
-            <img
-              src={ImageTwo}
-              style={{ height: "15em", width: "20em", padding: ".5em" }}
-            />
-            <img
-              src={ImageThree}
-              style={{ height: "15em", width: "20em", padding: ".5em" }}
-            />
-            <img
-              src={ImageFour}
-              style={{ height: "15em", width: "20em", padding: ".5em" }}
-            />
+            <Carousel />
+            {/* <div>
+              <img
+                src={ImageOne}
+                style={{ height: "15em", width: "20em", padding: ".5em" }}
+              />
+            </div>
+            <div>
+              <img
+                src={ImageTwo}
+                style={{ height: "15em", width: "20em", padding: ".5em" }}
+              />
+            </div>
+            <div>
+              <img
+                src={ImageThree}
+                style={{ height: "15em", width: "20em", padding: ".5em" }}
+              />
+            </div>
+            <div>
+              <img
+                src={ImageFour}
+                style={{ height: "15em", width: "20em", padding: ".5em" }}
+              />
+            </div> */}
           </div>
-          <div>
+          {/* <div>
             <img
               src={ImageFive}
               style={{ height: "15em", width: "20em", padding: ".5em" }}
@@ -155,7 +174,7 @@ const Hobbies = () => {
               src={ImageTwelve}
               style={{ height: "20em", width: "15em", padding: ".5em" }}
             />
-          </div>
+          </div> */}
         </div>
         <div
           style={{

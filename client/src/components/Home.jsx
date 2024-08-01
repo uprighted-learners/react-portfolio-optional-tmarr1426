@@ -1,7 +1,6 @@
-import React, { useState } from "react";
+import React from "react";
 import image from "../assets/Self/20230917_121857.jpg";
 import { Box, Card, CardContent } from "@mui/material";
-
 import DriveTime from "../assets/Self/rainbow-drive-time.png";
 import MyCircle from "../assets/Self/mycircle_v2.png";
 import Jeopardy from "../assets/Self/jeopardy.jpg";
@@ -16,11 +15,13 @@ const Home = () => {
         // alignItems: "center",
       }}
     >
-      <div style={{ margin: "20em" }}>
+      <div className="intro" style={{ margin: "20em" }}>
         <h1>Hey, I'm Travis.</h1>
         <h2>I'm a full stack Software Engineer and Web Developer.</h2>
       </div>
+
       <div
+        className="about"
         style={{
           display: "flex",
           flexDirection: "row",
@@ -74,7 +75,9 @@ const Home = () => {
         </div>
         <br />
       </div>
+
       <div
+        className="projects"
         style={{
           display: "flex",
           flexDirection: "row",
@@ -117,6 +120,7 @@ const Home = () => {
                 <CardContent>
                   <a
                     href="https://drivetime.netlify.app"
+                    target="none"
                     style={{
                       fontSize: 32,
                       textDecoration: "underline 2px",
@@ -164,6 +168,7 @@ const Home = () => {
                 <CardContent>
                   <a
                     href="https://my-circle-app.netlify.app"
+                    target="none"
                     style={{
                       fontSize: 32,
                       textDecoration: "underline 2px",
@@ -211,6 +216,7 @@ const Home = () => {
                 <CardContent>
                   <a
                     href="https://tmarr-jeopardy.netlify.app/"
+                    target="none"
                     style={{
                       fontSize: 32,
                       textDecoration: "underline 2px",
@@ -231,7 +237,9 @@ const Home = () => {
           </Box>
         </Card>
       </div>
+
       <div
+        className="contact"
         style={{
           display: "flex",
           flexDirection: "column",

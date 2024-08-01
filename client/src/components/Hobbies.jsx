@@ -108,73 +108,7 @@ const Hobbies = () => {
             }}
           >
             <Carousel />
-            {/* <div>
-              <img
-                src={ImageOne}
-                style={{ height: "15em", width: "20em", padding: ".5em" }}
-              />
-            </div>
-            <div>
-              <img
-                src={ImageTwo}
-                style={{ height: "15em", width: "20em", padding: ".5em" }}
-              />
-            </div>
-            <div>
-              <img
-                src={ImageThree}
-                style={{ height: "15em", width: "20em", padding: ".5em" }}
-              />
-            </div>
-            <div>
-              <img
-                src={ImageFour}
-                style={{ height: "15em", width: "20em", padding: ".5em" }}
-              />
-            </div> */}
           </div>
-          {/* <div>
-            <img
-              src={ImageFive}
-              style={{ height: "15em", width: "20em", padding: ".5em" }}
-            />
-
-            <img
-              src={ImageSix}
-              style={{ height: "15em", width: "20em", padding: ".5em" }}
-            />
-
-            <img
-              src={ImageSeven}
-              style={{ height: "15em", width: "20em", padding: ".5em" }}
-            />
-
-            <img
-              src={ImageEight}
-              style={{ height: "15em", width: "20em", padding: ".5em" }}
-            />
-          </div>
-          <div>
-            <img
-              src={ImageNine}
-              style={{ height: "20em", width: "15em", padding: ".5em" }}
-            />
-
-            <img
-              src={ImageTen}
-              style={{ height: "20em", width: "15em", padding: ".5em" }}
-            />
-
-            <img
-              src={ImageEleven}
-              style={{ height: "20em", width: "15em", padding: ".5em" }}
-            />
-
-            <img
-              src={ImageTwelve}
-              style={{ height: "20em", width: "15em", padding: ".5em" }}
-            />
-          </div> */}
         </div>
         <div
           style={{

@@ -37,9 +37,6 @@ function App() {
   return (
     <MantineProvider>
       <div className="App">
-        <div>
-          <Nav />
-        </div>
         <header className="App-header">
           <Routes>
             <Route path="/" element={<Navigate to="/home" />} />
@@ -50,9 +47,9 @@ function App() {
             <Route path="/hobbies" element={<Hobbies />} />
           </Routes>
         </header>
-        <footer>
+        <div>
           <Footer />
-        </footer>
+        </div>
       </div>
     </MantineProvider>
   );

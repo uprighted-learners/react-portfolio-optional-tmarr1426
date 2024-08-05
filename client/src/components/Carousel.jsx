@@ -6,7 +6,7 @@ import ImageOne from "../assets/Miniatures/DSC_0484_result.png";
 import ImageTwo from "../assets/Miniatures/DSC_0486_result.png";
 import ImageThree from "../assets/Miniatures/DSC_0507_result.png";
 import ImageFour from "../assets/Miniatures/DSC_0531_result.jpg";
-import ImageFive from "../assets/Miniatures/DSC_0180.jpg";
+import ImageFive from "../assets/Miniatures/ukotoa.jpg";
 import ImageSix from "../assets/Miniatures/DSC_0202.jpg";
 import ImageSeven from "../assets/Miniatures/DSC_0207.jpg";
 import ImageEight from "../assets/Miniatures/DSC_0219.jpg";

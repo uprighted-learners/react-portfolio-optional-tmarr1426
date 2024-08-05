@@ -15,67 +15,57 @@ const Home = () => {
         // alignItems: "center",
       }}
     >
-      <div className="intro" style={{ margin: "20em" }}>
+      <div
+        className="intro"
+        style={{ marginTop: "20em", marginBottom: "25em" }}
+      >
         <h1>Hey, I'm Travis.</h1>
         <h2>I'm a full stack Software Engineer and Web Developer.</h2>
       </div>
-
       <div
-        className="about"
         style={{
           display: "flex",
-          flexDirection: "row",
-          gap: "2em",
-          marginTop: "5em",
+          flexDirection: "column",
+          gap: "1em",
+          alignItems: "flex-start",
         }}
       >
-        <div
+        <h1
           style={{
             display: "flex",
-            flexDirection: "column",
-            gap: "1em",
-            alignItems: "flex-start",
+            textDecoration: "underline",
           }}
         >
-          <h1
+          About Me
+        </h1>
+        <p style={{ width: "40em" }}>
+          I am a Software Engineer and Web Developer looking to get involved in
+          some fun projects. I am a passionate person with everything I do and I
+          fuel my job with that passion. I strive to always be learning
+          something new. I have experience with HTML, CSS, JS, React.JS,
+          Next.JS, MongoDB, and SQL.
+        </p>
+        <div>
+          <img
+            src={image}
             style={{
-              display: "flex",
-              textDecoration: "underline",
+              height: "30em",
+              width: "23em",
+              border: "solid",
+              borderRadius: ".5em",
+              borderColor: "darkgreen",
             }}
-          >
-            About Me
-          </h1>
-          <p style={{ width: "40em" }}>
-            I am a Software Engineer and Web Developer looking to get involved
-            in some fun projects. I am a passionate person with everything I do
-            and I fuel my job with that passion. I strive to always be learning
-            something new. I have experience with HTML, CSS, JS, React.JS,
-            Next.JS, MongoDB, and SQL.
-          </p>
-          <div>
-            <img
-              src={image}
-              style={{
-                height: "30em",
-                width: "23em",
-                border: "solid",
-                borderRadius: ".5em",
-                borderColor: "darkgreen",
-              }}
-            />
-            <img
-              src={Logos}
-              style={{
-                height: "30em",
-                width: "23em",
-                marginLeft: "40em",
-              }}
-            />
-          </div>
+          />
+          <img
+            src={Logos}
+            style={{
+              height: "30em",
+              width: "23em",
+              marginLeft: "40em",
+            }}
+          />
         </div>
-        <br />
       </div>
-
       <div
         className="projects"
         style={{

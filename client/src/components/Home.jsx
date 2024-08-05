@@ -157,7 +157,7 @@ const Home = () => {
                 />
                 <CardContent>
                   <a
-                    href="https://my-circle-app.netlify.app"
+                    href="https://mycircle-example.netlify.app"
                     target="none"
                     style={{
                       fontSize: 32,

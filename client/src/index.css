@@ -78,3 +78,79 @@ button:focus-visible {
     background-color: #f9f9f9;
   }
 }
+
+.home-about {
+  display: flex;
+  flex-direction: column;
+  gap: "1em";
+  align-items: flex-start;
+}
+
+.home {
+  display: flex;
+  flex-direction: column;
+}
+
+.about-img {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+}
+
+.projects {
+  display: "flex";
+  flex-direction: "row";
+  justify-content: center;
+}
+
+.project-list {
+  display: flex;
+  flex-direction: row;
+}
+
+.logos {
+  height: "30em";
+  width: "23em";
+  margin-left: "40em";
+}
+
+@media (max-width: 430px) {
+  .home {
+    justify-content: center;
+    align-items: center;
+    max-width: 100%;
+    background-image: radial-gradient(
+      circle at bottom,
+      rgba(2, 17, 5, 0.911) 60%,
+      rgba(73, 104, 99, 0.87)
+    );
+  }
+  .intro {
+    justify-content: center;
+    align-items: center;
+    max-width: 100%;
+  }
+  .home-about {
+    justify-content: center;
+    align-items: center;
+    max-width: 100%;
+  }
+  .about-img {
+    display: flex;
+    flex-direction: column;
+    max-width: 100%;
+    justify-content: center;
+    align-items: center;
+  }
+  .logos {
+    height: "30px";
+    width: "23px";
+    margin-left: 0;
+  }
+  .project-list {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+}

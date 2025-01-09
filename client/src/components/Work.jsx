@@ -12,6 +12,7 @@ const Work = () => {
         padding: "2em",
         width: "70em",
       }}
+      className="work-div"
     >
       <div>
         <div style={{ display: "flex", flexDirection: "row" }}>

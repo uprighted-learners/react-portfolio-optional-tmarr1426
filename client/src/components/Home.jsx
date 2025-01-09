@@ -8,13 +8,7 @@ import Logos from "../assets/Self/Code_logos.png";
 
 const Home = () => {
   return (
-    <div
-      style={{
-        display: "flex",
-        flexDirection: "column",
-        // alignItems: "center",
-      }}
-    >
+    <div className="home">
       <div
         className="intro"
         style={{ marginTop: "20em", marginBottom: "25em" }}
@@ -22,14 +16,7 @@ const Home = () => {
         <h1>Hey, I'm Travis.</h1>
         <h2>I'm a full stack Software Engineer and Web Developer.</h2>
       </div>
-      <div
-        style={{
-          display: "flex",
-          flexDirection: "column",
-          gap: "1em",
-          alignItems: "flex-start",
-        }}
-      >
+      <div className="home-about">
         <h1
           style={{
             display: "flex",
@@ -45,7 +32,7 @@ const Home = () => {
           something new. I have experience with HTML, CSS, JS, React.JS,
           Next.JS, MongoDB, and SQL.
         </p>
-        <div>
+        <div className="about-img">
           <img
             src={image}
             style={{
@@ -56,14 +43,7 @@ const Home = () => {
               borderColor: "darkgreen",
             }}
           />
-          <img
-            src={Logos}
-            style={{
-              height: "30em",
-              width: "23em",
-              marginLeft: "40em",
-            }}
-          />
+          <img src={Logos} className="logos" />
         </div>
       </div>
       <div
@@ -76,13 +56,7 @@ const Home = () => {
       >
         <h1 style={{ textDecoration: "underline" }}>Live Projects</h1>
       </div>
-      <div
-        style={{
-          display: "flex",
-          flexDirection: "row",
-          justifyContent: "flex-end",
-        }}
-      >
+      <div className="project-list">
         <Card
           style={{
             width: "30em",

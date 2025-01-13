@@ -33,16 +33,7 @@ const Home = () => {
           Next.JS, MongoDB, and SQL.
         </p>
         <div className="about-img">
-          <img
-            src={image}
-            style={{
-              height: "30em",
-              width: "23em",
-              border: "solid",
-              borderRadius: ".5em",
-              borderColor: "darkgreen",
-            }}
-          />
+          <img className="self-img" src={image} />
           <img src={Logos} className="logos" />
         </div>
       </div>
@@ -51,7 +42,7 @@ const Home = () => {
         style={{
           display: "flex",
           flexDirection: "row",
-          justifyContent: "flex-end",
+          justifyContent: "center",
         }}
       >
         <h1 style={{ textDecoration: "underline" }}>Live Projects</h1>

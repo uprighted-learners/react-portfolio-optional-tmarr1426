@@ -1,6 +1,6 @@
 import React from "react";
 import Carousel from "./Carousel";
-import Hero from "../assets/Self/TCMinis-Web-Hero-Image-v1.jpg";
+import Hero from "../assets/Self/TCMinis-Web-Hero-Image-v2.png";
 
 const Hobbies = () => {
   const settings = {

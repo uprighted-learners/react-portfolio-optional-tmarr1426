@@ -49,7 +49,7 @@ const Carousel = () => {
     <Box
       sx={{
         position: "relative",
-        width: "60%",
+        width: "80%",
         height: "400px",
         margin: "0 auto",
         overflow: "hidden",
@@ -63,7 +63,7 @@ const Carousel = () => {
         sx={{
           width: "100%",
           height: "100%",
-          objectFit: "cover",
+          objectFit: "contain",
           borderRadius: "8px",
         }}
       />

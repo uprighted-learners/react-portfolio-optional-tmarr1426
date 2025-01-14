@@ -9,10 +9,7 @@ import Logos from "../assets/Self/Code_logos.png";
 const Home = () => {
   return (
     <div className="home">
-      <div
-        className="intro"
-        style={{ marginTop: "20em", marginBottom: "25em" }}
-      >
+      <div className="intro">
         <h1>Hey, I'm Travis.</h1>
         <h2>I'm a full stack Software Engineer and Web Developer.</h2>
       </div>
@@ -25,7 +22,7 @@ const Home = () => {
         >
           About Me
         </h1>
-        <p style={{ width: "40em" }}>
+        <p className="about">
           I am a Software Engineer and Web Developer looking to get involved in
           some fun projects. I am a passionate person with everything I do and I
           fuel my job with that passion. I strive to always be learning

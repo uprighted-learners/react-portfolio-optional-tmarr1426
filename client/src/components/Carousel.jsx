@@ -49,7 +49,7 @@ const Carousel = () => {
     <Box
       sx={{
         position: "relative",
-        width: "80%",
+        width: "60%",
         height: "400px",
         margin: "0 auto",
         overflow: "hidden",

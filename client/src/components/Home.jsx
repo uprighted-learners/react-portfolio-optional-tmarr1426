@@ -47,7 +47,7 @@ const Home = () => {
       <div className="project-list">
         <Card
           style={{
-            width: "30em",
+            width: "50%",
             margin: "1em",
             boxShadow: "4px 4px 4px #000000",
             borderRadius: "1em",
@@ -55,11 +55,11 @@ const Home = () => {
           }}
         >
           <Box sx={{ display: "flex", flexDirection: "row" }}>
-            <CardContent sx={{ flex: "1 0 auto" }}>
+            <CardContent sx={{ display: "flex", flexDirection: "row" }}>
               <Box
                 sx={{
                   display: "flex",
-                  flexDirection: "row",
+                  width: "40%",
                   justifyContent: "center",
                   alignItems: "center",
                 }}
@@ -198,16 +198,7 @@ const Home = () => {
           alignItems: "center",
         }}
       >
-        <div
-          style={{
-            backgroundColor: "whitesmoke",
-            color: "black",
-            border: "solid",
-            borderColor: "black",
-            padding: "5px",
-            width: "45em",
-          }}
-        >
+        <div className="form">
           <h4>
             If you're looking to get ahold of me, you can fill out the form
             below to send me an email!

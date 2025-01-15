@@ -1,58 +1,155 @@
 #root {
-  font-family: "Roboto", sans-serif;
-  font-weight: 300;
-  font-style: normal;
-  max-width: auto;
-  color-scheme: light dark;
-  color: rgba(213, 235, 213, 0.87);
+  max-width: 1280px;
   margin: 0 auto;
   padding: 2rem;
   text-align: center;
+  color: #b4f8b4;
 }
 
-.card {
-  padding: 2em;
+body {
+  background-image: url(../src/assets/Self/TCMinis\ Background.png);
+  background-size: cover; /* Adjusted to cover the whole background */
+  background-repeat: no-repeat; /* No repeat for background */
+  background-color: #3c3c3e;
 }
 
-nav li {
-  list-style: none;
-  display: inline-block;
-  margin: 1em;
+a {
+  font-weight: 500;
+  color: #083814;
+  text-decoration: inherit;
+}
+a:hover {
+  color: #88ff88;
 }
 
-.about-img {
+h1 {
+  font-size: 3em;
+  font-weight: 300;
+  line-height: 1.1;
+}
+
+h2 {
+  font-weight: 200;
+}
+
+button {
+  border-radius: 8px;
+  border: 1px solid transparent;
+  padding: 0.6em 1.2em;
+  font-size: 1em;
+  font-weight: 500;
+  font-family: inherit;
+  color: #f9f9f9;
+  background-color: #1a1a1a;
+  cursor: pointer;
+  transition: border-color 0.25s;
+}
+button:hover {
+  border-color: #64ff7e;
+}
+button:focus,
+button:focus-visible {
+  outline: 4px auto -webkit-focus-ring-color;
+}
+
+@media (prefers-color-scheme: light) {
+  :root {
+    color: #213547;
+    background-color: #3c3c3e;
+  }
+  a:hover {
+    color: #102719;
+  }
+  button {
+    background-color: #f9f9f9;
+  }
+}
+
+.intro,
+.home-about {
+  display: flex; /* Ensure these containers are flex */
+  flex-direction: column;
+  justify-content: center;
+  align-items: center; /* Center items in the column */
+}
+
+.home {
+  display: flex;
+  flex-direction: column;
+}
+
+.about {
+  width: 40em;
+  display: flex;
+  flex-direction: column; /* Ensure this is in column */
+  align-items: center; /* Center items */
+}
+
+.project-list,
+.about-img,
+.projects {
   display: flex;
   flex-direction: row;
-  justify-items: space-around;
+  justify-content: center; /* Center items horizontally */
+  align-items: center; /* Center items vertically */
 }
 
-@media (max-width: 430px) {
+.self-img {
+  border: 0.5px solid darkgreen;
+  height: 30em;
+  width: 23em;
+}
+
+.logos {
+  height: 30em;
+  width: 23em;
+  margin-left: 40em;
+}
+.form {
+  background-color: whitesmoke;
+  color: black;
+  border: 2px solid black;
+  padding: 5px;
+  width: 45%;
+  margin: 5%;
+}
+
+@media (max-width: 450px) {
   .about {
-    width: 35em; /* Consider using percentages or 'vw' for better responsiveness */
-    margin-bottom: 5em;
+    width: 75%; /* Consider using percentages or 'vw' for better responsiveness */
+    margin-bottom: 5%;
   }
   .intro,
   .home-about {
     display: flex; /* Ensure these containers are flex */
+    flex-direction: column;
     justify-content: center;
     align-items: center;
     max-width: 100%;
-    margin: 5em 0; /* Combine margin */
+    margin: 5em; /* Combine margin */
   }
   .about-img {
     display: flex;
     flex-direction: row;
-    margin: 10px;
+    margin: 1%;
   }
   .logos {
-    height: 30em;
-    width: 23em;
-    margin: 1px;
+    height: 45%;
+    width: 45%;
+    margin: 1%;
   }
   .project-list {
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
+  }
+  .form {
+    background-color: whitesmoke;
+    color: black;
+    border: 2px solid black;
+    padding: 5px;
+    width: 90%;
+    margin: 5%;
   }
 }

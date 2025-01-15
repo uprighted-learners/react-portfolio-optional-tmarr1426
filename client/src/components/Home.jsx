@@ -45,146 +45,62 @@ const Home = () => {
         <h1 style={{ textDecoration: "underline" }}>Live Projects</h1>
       </div>
       <div className="project-list">
-        <Card
-          style={{
-            width: "50%",
-            margin: "1em",
-            boxShadow: "4px 4px 4px #000000",
-            borderRadius: "1em",
-            backgroundColor: "#ECEAED",
-          }}
-        >
-          <Box sx={{ display: "flex", flexDirection: "row" }}>
-            <CardContent sx={{ display: "flex", flexDirection: "row" }}>
-              <Box
-                sx={{
-                  display: "flex",
-                  width: "40%",
-                  justifyContent: "center",
-                  alignItems: "center",
-                }}
+        <Card>
+          <Box>
+            <img
+              style={{ width: "40%" }}
+              src={DriveTime}
+              alt="DriveTime Logo"
+            />
+            <CardContent>
+              <a
+                href="https://drivetime.netlify.app"
+                target="_blank" // Changed to _blank
+                gutterBottom
               >
-                <img
-                  src={DriveTime}
-                  alt="DriveTime Logo"
-                  style={{ height: "10em" }}
-                />
-                <CardContent>
-                  <a
-                    href="https://drivetime.netlify.app"
-                    target="none"
-                    style={{
-                      fontSize: 32,
-                      textDecoration: "underline 2px",
-                      fontWeight: "700",
-                      textAlign: "left",
-                    }}
-                    color="#494888"
-                    gutterBottom
-                  >
-                    DriveTime Live
-                  </a>
-                  <p style={{ width: "13em" }}>
-                    DriveTime is a web app that allows a new and young driver to
-                    track their driving hours, conditions, distance, and more.
-                  </p>
-                </CardContent>
-              </Box>
+                DriveTime Live
+              </a>
+              <p>
+                DriveTime is a web app that allows a new and young driver to
+                track their driving hours, conditions, distance, and more.
+              </p>
             </CardContent>
           </Box>
         </Card>
-        <Card
-          style={{
-            width: "30em",
-            margin: "1em",
-            boxShadow: "4px 4px 4px #000000",
-            borderRadius: "1em",
-            backgroundColor: "#ECEAED",
-          }}
-        >
-          <Box sx={{ display: "flex", flexDirection: "row" }}>
-            <CardContent sx={{ flex: "1 0 auto" }}>
-              <Box
-                sx={{
-                  display: "flex",
-                  flexDirection: "row",
-                  justifyContent: "center",
-                  alignItems: "center",
-                }}
+
+        <Card>
+          <Box>
+            <img style={{ width: "40%" }} src={MyCircle} alt="MyCircle Logo" />
+            <CardContent>
+              <a
+                href="https://mycircle-example.netlify.app"
+                target="_blank" // Changed to _blank
+                gutterBottom
               >
-                <img
-                  src={MyCircle}
-                  alt="MyCircle Logo"
-                  style={{ height: "5em" }}
-                />
-                <CardContent>
-                  <a
-                    href="https://mycircle-example.netlify.app"
-                    target="none"
-                    style={{
-                      fontSize: 32,
-                      textDecoration: "underline 2px",
-                      fontWeight: "700",
-                      textAlign: "left",
-                    }}
-                    color="#494888"
-                    gutterBottom
-                  >
-                    MyCircle
-                  </a>
-                  <p style={{ width: "13em" }}>
-                    MyCircle is a Discgolf practice web app that allows a user
-                    to practice putting and track their putting stats.
-                  </p>
-                </CardContent>
-              </Box>
+                MyCircle
+              </a>
+              <p>
+                MyCircle is a Discgolf practice web app that allows a user to
+                practice putting and track their putting stats.
+              </p>
             </CardContent>
           </Box>
         </Card>
-        <Card
-          style={{
-            width: "30em",
-            margin: "1em",
-            boxShadow: "4px 4px 4px #000000",
-            borderRadius: "1em",
-            backgroundColor: "#ECEAED",
-          }}
-        >
-          <Box sx={{ display: "flex", flexDirection: "row" }}>
-            <CardContent sx={{ flex: "1 0 auto" }}>
-              <Box
-                sx={{
-                  display: "flex",
-                  flexDirection: "row",
-                  justifyContent: "center",
-                  alignItems: "center",
-                }}
+
+        <Card>
+          <Box>
+            <img src={Jeopardy} alt="Jeopardy Logo" style={{ width: "40%" }} />
+            <CardContent>
+              <a
+                href="https://tmarr-jeopardy.netlify.app/"
+                target="_blank" // Changed to _blank
+                gutterBottom
               >
-                <img
-                  src={Jeopardy}
-                  alt="Jeopardy Logo"
-                  style={{ height: "7em" }}
-                />
-                <CardContent>
-                  <a
-                    href="https://tmarr-jeopardy.netlify.app/"
-                    target="none"
-                    style={{
-                      fontSize: 32,
-                      textDecoration: "underline 2px",
-                      fontWeight: "700",
-                      textAlign: "left",
-                    }}
-                    color="#494888"
-                    gutterBottom
-                  >
-                    Jeopardy Board
-                  </a>
-                  <p style={{ width: "13em" }}>
-                    This is a simple Jeopardy Game made using HTML, CSS, and JS.
-                  </p>
-                </CardContent>
-              </Box>
+                Jeopardy Board
+              </a>
+              <p>
+                This is a simple Jeopardy Game made using HTML, CSS, and JS.
+              </p>
             </CardContent>
           </Box>
         </Card>

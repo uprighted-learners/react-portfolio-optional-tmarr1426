@@ -31,7 +31,7 @@ const Home = () => {
         </p>
         <div className="about-img">
           <img className="self-img" src={image} />
-          <img src={Logos} className="logos" />
+          <img className="logos" src={Logos} />
         </div>
       </div>
       <div
@@ -45,7 +45,7 @@ const Home = () => {
         <h1 style={{ textDecoration: "underline" }}>Live Projects</h1>
       </div>
       <div className="project-list">
-        <Card>
+        <Card style={{ margin: "1%" }}>
           <Box>
             <img
               style={{ width: "40%" }}
@@ -68,7 +68,7 @@ const Home = () => {
           </Box>
         </Card>
 
-        <Card>
+        <Card style={{ margin: "1%" }}>
           <Box>
             <img style={{ width: "40%" }} src={MyCircle} alt="MyCircle Logo" />
             <CardContent>
@@ -87,7 +87,7 @@ const Home = () => {
           </Box>
         </Card>
 
-        <Card>
+        <Card style={{ margin: "1%" }}>
           <Box>
             <img src={Jeopardy} alt="Jeopardy Logo" style={{ width: "40%" }} />
             <CardContent>

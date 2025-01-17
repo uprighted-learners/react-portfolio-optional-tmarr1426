@@ -45,10 +45,10 @@ const Home = () => {
         <h1 style={{ textDecoration: "underline" }}>Live Projects</h1>
       </div>
       <div className="project-list">
-        <Card style={{ margin: "1%" }}>
+        <Card style={{ margin: "1%", width: "70%", height: "30vh" }}>
           <Box>
             <img
-              style={{ width: "40%" }}
+              style={{ width: "50%" }}
               src={DriveTime}
               alt="DriveTime Logo"
             />
@@ -68,9 +68,13 @@ const Home = () => {
           </Box>
         </Card>
 
-        <Card style={{ margin: "1%" }}>
+        <Card style={{ margin: "1%", width: "70%", height: "30vh" }}>
           <Box>
-            <img style={{ width: "40%" }} src={MyCircle} alt="MyCircle Logo" />
+            <img
+              style={{ width: "40%", marginTop: "4vh" }}
+              src={MyCircle}
+              alt="MyCircle Logo"
+            />
             <CardContent>
               <a
                 href="https://mycircle-example.netlify.app"
@@ -87,9 +91,13 @@ const Home = () => {
           </Box>
         </Card>
 
-        <Card style={{ margin: "1%" }}>
+        <Card style={{ margin: "1%", width: "70%", height: "30vh" }}>
           <Box>
-            <img src={Jeopardy} alt="Jeopardy Logo" style={{ width: "40%" }} />
+            <img
+              src={Jeopardy}
+              alt="Jeopardy Logo"
+              style={{ width: "40%", marginTop: "4vh" }}
+            />
             <CardContent>
               <a
                 href="https://tmarr-jeopardy.netlify.app/"

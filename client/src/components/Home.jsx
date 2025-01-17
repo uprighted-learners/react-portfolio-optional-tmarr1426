@@ -9,10 +9,7 @@ import Logos from "../assets/Self/Code_logos.png";
 const Home = () => {
   return (
     <div className="home">
-      <div
-        className="intro"
-        style={{ marginTop: "20em", marginBottom: "25em" }}
-      >
+      <div className="intro">
         <h1>Hey, I'm Travis.</h1>
         <h2>I'm a full stack Software Engineer and Web Developer.</h2>
       </div>
@@ -25,7 +22,7 @@ const Home = () => {
         >
           About Me
         </h1>
-        <p style={{ width: "40em" }}>
+        <p className="about">
           I am a Software Engineer and Web Developer looking to get involved in
           some fun projects. I am a passionate person with everything I do and I
           fuel my job with that passion. I strive to always be learning
@@ -34,7 +31,7 @@ const Home = () => {
         </p>
         <div className="about-img">
           <img className="self-img" src={image} />
-          <img src={Logos} className="logos" />
+          <img className="logos" src={Logos} />
         </div>
       </div>
       <div
@@ -48,146 +45,70 @@ const Home = () => {
         <h1 style={{ textDecoration: "underline" }}>Live Projects</h1>
       </div>
       <div className="project-list">
-        <Card
-          style={{
-            width: "30em",
-            margin: "1em",
-            boxShadow: "4px 4px 4px #000000",
-            borderRadius: "1em",
-            backgroundColor: "#ECEAED",
-          }}
-        >
-          <Box sx={{ display: "flex", flexDirection: "row" }}>
-            <CardContent sx={{ flex: "1 0 auto" }}>
-              <Box
-                sx={{
-                  display: "flex",
-                  flexDirection: "row",
-                  justifyContent: "center",
-                  alignItems: "center",
-                }}
+        <Card style={{ margin: "1%", width: "70%", height: "30vh" }}>
+          <Box>
+            <img
+              style={{ width: "50%" }}
+              src={DriveTime}
+              alt="DriveTime Logo"
+            />
+            <CardContent>
+              <a
+                href="https://drivetime.netlify.app"
+                target="_blank" // Changed to _blank
+                gutterBottom
               >
-                <img
-                  src={DriveTime}
-                  alt="DriveTime Logo"
-                  style={{ height: "10em" }}
-                />
-                <CardContent>
-                  <a
-                    href="https://drivetime.netlify.app"
-                    target="none"
-                    style={{
-                      fontSize: 32,
-                      textDecoration: "underline 2px",
-                      fontWeight: "700",
-                      textAlign: "left",
-                    }}
-                    color="#494888"
-                    gutterBottom
-                  >
-                    DriveTime Live
-                  </a>
-                  <p style={{ width: "13em" }}>
-                    DriveTime is a web app that allows a new and young driver to
-                    track their driving hours, conditions, distance, and more.
-                  </p>
-                </CardContent>
-              </Box>
+                DriveTime Live
+              </a>
+              <p>
+                DriveTime is a web app that allows a new and young driver to
+                track their driving hours, conditions, distance, and more.
+              </p>
             </CardContent>
           </Box>
         </Card>
-        <Card
-          style={{
-            width: "30em",
-            margin: "1em",
-            boxShadow: "4px 4px 4px #000000",
-            borderRadius: "1em",
-            backgroundColor: "#ECEAED",
-          }}
-        >
-          <Box sx={{ display: "flex", flexDirection: "row" }}>
-            <CardContent sx={{ flex: "1 0 auto" }}>
-              <Box
-                sx={{
-                  display: "flex",
-                  flexDirection: "row",
-                  justifyContent: "center",
-                  alignItems: "center",
-                }}
+
+        <Card style={{ margin: "1%", width: "70%", height: "30vh" }}>
+          <Box>
+            <img
+              style={{ width: "40%", marginTop: "4vh" }}
+              src={MyCircle}
+              alt="MyCircle Logo"
+            />
+            <CardContent>
+              <a
+                href="https://mycircle-example.netlify.app"
+                target="_blank" // Changed to _blank
+                gutterBottom
               >
-                <img
-                  src={MyCircle}
-                  alt="MyCircle Logo"
-                  style={{ height: "5em" }}
-                />
-                <CardContent>
-                  <a
-                    href="https://mycircle-example.netlify.app"
-                    target="none"
-                    style={{
-                      fontSize: 32,
-                      textDecoration: "underline 2px",
-                      fontWeight: "700",
-                      textAlign: "left",
-                    }}
-                    color="#494888"
-                    gutterBottom
-                  >
-                    MyCircle
-                  </a>
-                  <p style={{ width: "13em" }}>
-                    MyCircle is a Discgolf practice web app that allows a user
-                    to practice putting and track their putting stats.
-                  </p>
-                </CardContent>
-              </Box>
+                MyCircle
+              </a>
+              <p>
+                MyCircle is a Discgolf practice web app that allows a user to
+                practice putting and track their putting stats.
+              </p>
             </CardContent>
           </Box>
         </Card>
-        <Card
-          style={{
-            width: "30em",
-            margin: "1em",
-            boxShadow: "4px 4px 4px #000000",
-            borderRadius: "1em",
-            backgroundColor: "#ECEAED",
-          }}
-        >
-          <Box sx={{ display: "flex", flexDirection: "row" }}>
-            <CardContent sx={{ flex: "1 0 auto" }}>
-              <Box
-                sx={{
-                  display: "flex",
-                  flexDirection: "row",
-                  justifyContent: "center",
-                  alignItems: "center",
-                }}
+
+        <Card style={{ margin: "1%", width: "70%", height: "30vh" }}>
+          <Box>
+            <img
+              src={Jeopardy}
+              alt="Jeopardy Logo"
+              style={{ width: "40%", marginTop: "4vh" }}
+            />
+            <CardContent>
+              <a
+                href="https://tmarr-jeopardy.netlify.app/"
+                target="_blank" // Changed to _blank
+                gutterBottom
               >
-                <img
-                  src={Jeopardy}
-                  alt="Jeopardy Logo"
-                  style={{ height: "7em" }}
-                />
-                <CardContent>
-                  <a
-                    href="https://tmarr-jeopardy.netlify.app/"
-                    target="none"
-                    style={{
-                      fontSize: 32,
-                      textDecoration: "underline 2px",
-                      fontWeight: "700",
-                      textAlign: "left",
-                    }}
-                    color="#494888"
-                    gutterBottom
-                  >
-                    Jeopardy Board
-                  </a>
-                  <p style={{ width: "13em" }}>
-                    This is a simple Jeopardy Game made using HTML, CSS, and JS.
-                  </p>
-                </CardContent>
-              </Box>
+                Jeopardy Board
+              </a>
+              <p>
+                This is a simple Jeopardy Game made using HTML, CSS, and JS.
+              </p>
             </CardContent>
           </Box>
         </Card>
@@ -201,16 +122,7 @@ const Home = () => {
           alignItems: "center",
         }}
       >
-        <div
-          style={{
-            backgroundColor: "whitesmoke",
-            color: "black",
-            border: "solid",
-            borderColor: "black",
-            padding: "5px",
-            width: "45em",
-          }}
-        >
+        <div className="form">
           <h4>
             If you're looking to get ahold of me, you can fill out the form
             below to send me an email!

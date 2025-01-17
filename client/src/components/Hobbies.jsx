@@ -1,5 +1,6 @@
 import React from "react";
 import Carousel from "./Carousel";
+import Hero from "../assets/Self/TCMinis-Web-Hero-Image-v2.png";
 
 const Hobbies = () => {
   const settings = {
@@ -21,10 +22,13 @@ const Hobbies = () => {
       }}
     >
       <div>
-        <h2>Hobbies</h2>
+        <img src={Hero} style={{ maxWidth: "100%", margin: "0" }} />
       </div>
       <div>
-        <div
+        <h2>TCMinis Portfolio</h2>
+      </div>
+      <div>
+        {/* <div
           style={{
             display: "flex",
             flexDirection: "column",
@@ -79,7 +83,7 @@ const Hobbies = () => {
             sharing the things that I enjoy with them. Every day is a new
             journey with kids and its better than I could have imagined.
           </p>
-        </div>
+        </div> */}
       </div>
       <div>
         <h3>Gallery</h3>

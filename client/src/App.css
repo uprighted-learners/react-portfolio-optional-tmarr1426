@@ -7,7 +7,7 @@
 }
 
 body {
-  background-image: url(../src/assets/Self/TCMinis\ Background.png);
+  background-image: url(../src/assets/Self/TCMinis_Background.png);
   background-size: cover; /* Adjusted to cover the whole background */
   background-repeat: no-repeat; /* No repeat for background */
   background-color: #3c3c3e;
